@@ -1,0 +1,2 @@
+If you want to contribute to this wiki you can create a fork of the [Wiki Repo](https://github.com/steffendx/GoNorthWiki). Every pull request created and accepted for the Wiki Repo will get pushed to this wiki automatically.  
+It is not required to extend the documentation when creating pull requests, but its greatly appreciated.
