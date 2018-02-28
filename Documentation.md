@@ -1,0 +1,9 @@
+## Code Api Documentation Generation
+GoNorth uses [DocFX](https://dotnet.github.io/docfx/) for generating the server side code api documentation and [JSDoc](http://usejsdoc.org/) for client side code api documentation. If you want to generate the code api documentation you will have to install both of these to be available from the command line.  
+Afterwards you can run "/Documentation/ApiDocumentation/generateDocumentation.bat" (or if you are in a non windows environment take a look at this file and run the commands, its really not much). These commands will generate the documentation and you can find it under "/Documentation/ApiDocumentation/GoNorthServerSide/generatedDocumentation/index.html" and "/Documentation/ApiDocumentation/GoNorthClientSide/generatedDocumentation/index.html".
+
+## UML Diagram
+You can find a rough UML diagram I used for my planning in "/Documentation/GoNorth.simp". You can open it using the [Software Ideas Modeler](https://www.softwareideas.net/). Like I said its really a very rough diagram which I created only for myself while coming up with a plan on how to implement the different modules. But maybe it can still help you.
+
+## Wireframes
+I created some wireframes while planning the modules. You can find them in "/Documentation/Wireframes". I changed the programs I used during the implementation multiple times since it was hard to find a program that I really liked and could used so you will have to open some using [Wireframe Sketcher](http://wireframesketcher.com/), some using PowerPoint and some using [Pencil](https://pencil.evolus.vn/). But I'm not really sure if these wireframes will help you a lot since all the forms I sketched there are already implemented.
