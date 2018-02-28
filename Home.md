@@ -1,5 +1,5 @@
 Welcome to the GoNorth wiki!
-**Test**
+
 Table of contents:
  * [Deployment](/steffendx/GoNorth/wiki/Deployment)
  * Usage:
