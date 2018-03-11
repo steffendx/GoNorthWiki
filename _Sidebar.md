@@ -6,6 +6,7 @@
    * [Kortisto (Npcs)](/steffendx/GoNorth/wiki/Kortisto)
    * [Tale (Dialogs)](/steffendx/GoNorth/wiki/Tale)
    * [Styr (Item)](/steffendx/GoNorth/wiki/Styr)
+   * [Evne (Skill)](/steffendx/GoNorth/wiki/Evne)
    * [Kirja (Wiki)](/steffendx/GoNorth/wiki/Kirja)
    * [Karta (Maps)](/steffendx/GoNorth/wiki/Karta)
    * [Implementation Status Tracking](/steffendx/GoNorth/wiki/Implementation-Status-Tracking)

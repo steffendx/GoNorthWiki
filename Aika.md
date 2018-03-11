@@ -15,7 +15,8 @@ Below the buttons you will find the possible nodes you can drag into the graph s
 
 Like every node graph system you can move the nodes by dragging them with the mouse.  
 On the top right of each node you will find a "x" button which allows you to delete the node.  
-You can move the view by clicking outside of a node in the gray area and drag the screen and zoom using the mouse wheel. Alternatively you can use touch control.
+You can move the view by clicking outside of a node in the gray area and drag the screen and zoom using the mouse wheel. Alternatively you can use touch control.  
+On the top left of the node system you will find a display of your current position and zoom in the node system. Next to these coordinates you can find an arrow to expand or collapse the mini map of the node system.
 
 ## Chapter detail
 In a chapter detail view you will find the following buttons at the top:
@@ -72,6 +73,10 @@ The following nodes can be dragged into the node graph system:
     * **Add quest text**: Allows you to add text to a quest log
     * **Quest status will be changed in npc dialog**: Allows you to pick a npc dialog and a state to which the current quest must be changed. GoNorth will check if an action node to change the quest state exists in the selected dialog and will display a warning if no node exists. 
     * **Quest text will be changed in npc dialog**: Allows you to pick a npc dialog in which the text of the current quest will be adjusted. GoNorth will check if an action node to change the quest text exists in the selected dialog and will display a warning if no node exists. 
+    * **Wait**: Allows you to specify an amount of time to wait. The time can be specified in real time or game time.
+    * **Player learns skill**: Allows you to select a skill the player learns
+    * **Player forgets skills**: Allows you to select a skill the player forgets
+    * **Change player skill value**: Allows you to select a skill of the player and change the value of the skill.
  * **All done**: An all done node can be used to indicate that multiple steps need to be finished before the next step can proceed. This way you can drag the success output of three nodes into the input port of the All done node and then drag the output port of the node into the next step for example. This shows that all three steps must be completed successfully to continue the quest.
  * **Finish**: A finish node indicates a possible finish of the quest. You have to provide a name for the quest and can select a color. This way you can for example have two finish nodes for the quest "Success", "Failed" after an action node to set the quest status. But you could also have to different success finishes. In the chapter detail view these finished will be shown as output ports and the lines going away from this output port will have the selected color. This way its easy to follow the different story path in the detail view.
 
@@ -86,7 +91,11 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check pick quest value**: Allows you to pick a quest and check a value of the quest
  * **Check quest state**: Allows you to pick a quest and check the state of the quest
  * **Check npc alive state**: Allows you to pick a npc and check if the npc is alive or dead
+ * **Check game time**: Allows you check if the current game time is before or after a specified time.
  * **Check player distance to quest marker**: Allows you to pick a quest marker and specify a distance to which the player needs to be. This way you can specify a certain point the player needs to be or maybe is not allowed to leave.
+ * **Check player skill value**: Checks the value of a skill the player can cast. You can pick the skill using a dialog and specify the value condition.
+ * **Player can use skill**: Checks if the player can use a skill
+ * **Player can not use skill**: Checks if the player can not use a skill
 
 On the right of each condition you will find the following icons:
  * **Arrows**: Allows you to rearrange the conditions

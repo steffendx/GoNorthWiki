@@ -47,6 +47,11 @@ By clicking the Add item button you can add a new item to the inventory of the c
 Below you will see a table with all the items that are currently in the inventory of the npc. In this table you will be able to set the quantity of items in the inventory as well as flagging the item as equipped (for weapons, and armor etc.).  
 On the most right you will be able to click the trash bin icon to delete the item from the inventory.
 
+### Skills
+By clicking the Add skill button you can add a new skill the npc can cast. You will have to create the skill in Evne for this.  
+Below you will see a table with all the skills that the npc can cast.  
+On the most right you will be able click the trash bin icon to delete the skill.
+
 ### Tags
 In the tag box you can assign tags to the current template or npc. These tags are used in the npc search (either in the npc list page or when choosing a npc in the object select dialog).
 

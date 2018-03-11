@@ -13,6 +13,7 @@ While editing a page you can rename it using the textbox at the top. You will al
  * **Chess King**: If you have the Aika role you can click this button to choose a quest and insert a link for this quest in the page.
  * **Person**: If you have the Kortisto role you can click this button to choose a npc and insert a link for this npc in the page.
  * **Apple**: If you have the Styr role you can click this button to choose an item and insert a link for this item in the page.
+ * **Flash**: If you have the Evne role you can click this button to choose an skill and insert a link for this skill in the page.
 
 After insert a link and saving a page the current page will be shown in the form for the different objects as a related Kirja page. If you remove the link to the object again it will also remove this reference.
 
@@ -22,6 +23,7 @@ By clicking the arrow on the top right you can expand or collapse the sidebar. I
  * Quests that are mentioned in the current page
  * Npcs that are mentioned in the current page
  * Items that are mentioned in the current page
+ * Skills that are mentioned in the current page
  * Maps in which the current page is marked
  * Attachments that are added to the current page. If the page is saved, and therefore has an id, you can attach a new file to the page by clicking in the dropzone or dropping a file in the dropzone. On the right of the icons you will find a trash bin to delete the file from the page.
  * A link to open the page list

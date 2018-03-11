@@ -22,6 +22,8 @@ The following roles are available for users:
  * **KortistoPlayerManager**: Allows a user to mark an npc as the player character.
  * **Styr**: Allows a user to create and edit categories and items in the item planning module Styr.
  * **StyrTemplateManager**: Allows a user to create and edit item templates in the item planning module Styr.
+ * **Evne**: Allows a user to create and edit categories and skills in the skill planning module Evne.
+ * **EvneTemplateManager**: Allows a user to create and edit skill templates in the skill planning module Evne.
  * **Kirja**: Allows a user to access the wiki component Kirja.
  * **Tale**: Allows a user to edit the dialogs of npcs in the dialog planning module Tale.
  * **Aika**: Allows a user to edit chapters and quests in the quest planning module Aika.

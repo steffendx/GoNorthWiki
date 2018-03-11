@@ -25,6 +25,15 @@ The following nodes are available:
     * **Change pick quest value**: Allows you to pick a quest and change a value of this quest (like counting found objectives etc.)
     * **Change quest state**: Allows you to change the state of a quest
     * **Add quest text**: Allows you to add text to a quest log
+    * **Wait**: Allows you to specify an amount of time to wait. The time can be specified in real time or game time.
+    * **Change player state**: Allows you to change the state of the player. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the player is confused for example.
+    *  **Change npc state**: Allows you to change the state of the npc. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the npc is angry for example.
+    * **Player learns skill**: Allows you to select a skill the player learns
+    * **Player forgets skills**: Allows you to select a skill the player forgets
+    * **Npc learns skill**: Allows you to select a skill the npc learns
+    * **Npc forgets skills**: Allows you to select a skill the npc forgets
+    * **Change player skill value**: Allows you to select a skill of the player and change the value of the skill.
+    * **Change player skill value**: Allows you to select a skill of the npc and change the value of the skill.
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
@@ -32,7 +41,8 @@ The following nodes are available:
 You can move the nodes by clicking on them and dragging them to a new position.  
 On the left side of each node you will find a red input port, on the right side of each node you will find one or more output ports. You can drag the output port of a node into the input port of a different node. This way you can control the flow of the dialog.  
 On the top right of each node you will find a "x" button which allows you to delete the node.  
-You can move the view by clicking outside of a node in the gray area and drag the screen and zoom using the mouse wheel. Alternatively you can use touch control.
+You can move the view by clicking outside of a node in the gray area and drag the screen and zoom using the mouse wheel. Alternatively you can use touch control.  
+On the top left of the node system you will find a display of your current position and zoom in the node system. Next to these coordinates you can find an arrow to expand or collapse the mini map of the node system.
 
 ## Condition dialog
 When editing a condition the condition dialog will open. At the top of the condition dialog you will find the following buttons:
@@ -48,6 +58,14 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check npc inventory**: Allows you to pick an item that will be searched in the npc inventory and compare the count to a value you define
  * **Check pick quest value**: Allows you to pick a quest and check a value of this quest
  * **Check quest state**: Allows you to pick a quest and check the state of the quest
+ * **Check game time**: Allows you check if the current game time is before or after a specified 
+ time.
+ * **Check player skill value**: Checks the value of a skill the player can cast. You can pick the skill using a dialog and specify the value condition.
+ * **Check npc skill value**: Checks the value of a skill the npc can cast. You can pick the skill using a dialog and specify the value condition.
+ * **Player can use skill**: Checks if the player can use a skill
+ * **Player can not use skill**: Checks if the player can not use a skill
+ * **Npc can use skill**: Checks if the npc can use a skill
+ * **Npc can not use skill**: Checks if the npc can not use a skill
 
 On the right of each condition you will find the following icons:
  * **Arrows**: Allows you to rearrange the conditions
