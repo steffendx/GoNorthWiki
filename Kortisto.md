@@ -7,7 +7,8 @@ You will see a list of npcs and categories after navigating to Kortisto.
 By using the search box you can search for npcs. This will search in the name and the tags assigned to a npc.
 
 By clicking on create category you can create a new category for npcs. You can think of categories as folders in the file system. This way you can organize your different npcs.  
-Each category can be renamed using the pencil icon on the top right of the tile. You can also delete a category by pressing the trash bin icon. Please note: You can only delete empty categories.
+A category can be given a name, a description and an image. The description will be shown on mouse hover over the image or icon of the category.  
+Each category can be edited using the pencil icon on the top right of the tile. You can also delete a category by pressing the trash bin icon. Please note: You can only delete empty categories.
 
 By clicking on the create npc button you can choose a template and create a new npc based on this template. If no templates are shown there you will have to create a new template first by clicking on the manage template link in the drop down list.
 
@@ -24,6 +25,8 @@ At the top of the form you will find several buttons:
  * **Add field**: This drop down list allows you to add a new field to the current npc or template. You can choose between a single line text field, multi line text field and a number field. After selecting a field type you must provide a name of the field and add it to the npc or template.
  * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker and working on a npc. If the current npc is not implemented you can click on this button to see the changes to the npc and flag it as implemented. If the current npc is already implemented this button will be labeled with implemented and be disabled.
  * **Dialog**: This button is only available if you are working on a npc and have the Tale role. By clicking this button you will switch to the [dialog of the npc](/steffendx/GoNorth/wiki/Tale).
+ * **Name generator**: This button is only available if you are working on a template. By clicking this button you will be able to setup the name generator template. In the dialog you can enter the template by using different placeholders and test the generated names. You can find more information about the algorithm [here](http://rinkworks.com/namegen/instr.shtml) and [here](http://rinkworks.com/namegen/reference.shtml).
+ * **Generate name**: This button is only available if you are working on a npc. By clicking this button a name for the npc will be generated based on the name generator template of the npc template on which the npc is based. If no name generator template was specified in the npc template this button will be disabled.
  * **Mark as player**: This button will only be available if the current user is a Kortisto Player Manager and working on a npc. This button allows the user to flag an npc as the player npc. This is important in quests and dialogs to be able to select player values in actions and conditions.
  * **Delete**: Allows the user to delete the npc or template.
 

@@ -10,12 +10,26 @@ On the left of the map the different types of markers that a user can add to the
  * **Styr**: You can use the search box to search for an item you want to place on the map. You can place an item more than one time on the map. This way you can place items on the map that the user can find.
  * **Aika**: You can use th search box to search for a quest to which you wand to add markers. If you select a quest the already existing markers for this quest will be shown. So if you want to see the markers of a quest you will have to first select the quest. If you place a new marker a dialog will open where you can add a name to the quest marker.
  * **Karta**: You can select a map to which you want to add a map switch. After selecting a map you can add a marker for this map by clicking on the map.
+ * **Notes**: If you select &lt;New Note&gt; a dialog will open where you can add a name and description for the note. By using note markers you can mark certain areas as dangerous, magic blocked and so on.
 
 ### Editing Markers
 You can edit markers by simply dragging them. After releasing the marker it will be saved. By clicking on a marker a popup will be shown. At the bottom right of the popup you will find icons for editing the marker:
- * **Pencil**: The pencil will only be available for quest markers. By clicking on this icon you can rename the marker.
+ * **Circle**: By clicking this circle you can edit additional geometry for the marker. This geometry can be a line, polygon, rectangle or circle. You can find more info below, see **Editing marker geometry**.
+ * **Pencil**: The pencil will only be available for quest markers and notes. By clicking on this icon you can rename the marker or change the description.
  * **Cross**: If you are in the Implementation Status Tracker role you will see a cross if the marker is not implemented. By clicking on the cross a dialog will open that allows you to flag the marker as implemented. If the marker is already implemented a check marker will be shown instead that is not clickable.
  * **Trash bin**: By clicking this icon you can delete the marker.
+
+## Editing geometry
+When entering the geometry edit mode, using the circle icon in a marker popup, new toolbar buttons will be shown on the left side of the map. You can find the following buttons there:
+ * **Line**: Allows you to draw a line. By clicking you add a new vertex to the line. By clicking on the last vertex again you finish the line.
+ * **Polygon**: Allows you to draw a polygon. By clicking you add a new vertex to the polygon. By clicking on the first vertex again you finish the polygon.
+ * **Rectangle**: Allows you to draw a rectangle by dragging.
+ * **Circle**: Allows you to draw a circle by dragging.
+ * **Edit icon**: Allows you to pick the color for the next geometry object you draw.
+
+When in edit mode you can also edit the existing geometry of the marker by simply dragging the highlighted white rectangles. By clicking and dragging on the translucent rectangles between line vertices you can add a new vertex between. Double clicking on an existing vertex will remove it.  
+By clicking on the an existing geometry object the edit dialog will open. In this dialog you can change the color of the geometry.  
+In the bottom left of the edit dialog a delete button will be shown.
 
 ## Editing for Chapters
 After creating chapters in [Aika](/steffendx/GoNorth/wiki/Aika) you will be able to select a chapter at the top right. If you dont have the first chapter selected a clock will be shown to remind you that you are not editing the default values for the marker.  

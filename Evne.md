@@ -7,7 +7,8 @@ You will see a list of skills and categories after navigating to Evne.
 By using the search box you can search for skills. This will search in the name and the tags assigned to a skill.
 
 By clicking on create category you can create a new category for skills. You can think of categories as folders in the file system. This way you can organize your different skills.  
-Each category can be renamed using the pencil icon on the top right of the tile. You can also delete a category by pressing the trash bin icon. Please note: You can only delete empty categories.
+A category can be given a name, a description and an image. The description will be shown on mouse hover over the image or icon of the category.  
+Each category can be edited using the pencil icon on the top right of the tile. You can also delete a category by pressing the trash bin icon. Please note: You can only delete empty categories.
 
 By clicking on the create skill button you can choose a template and create a new skill based on this template. If no templates are shown there you will have to create a new template first by clicking on the manage template link in the drop down list.
 

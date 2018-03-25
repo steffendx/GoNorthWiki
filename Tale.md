@@ -34,6 +34,7 @@ The following nodes are available:
     * **Npc forgets skills**: Allows you to select a skill the npc forgets
     * **Change player skill value**: Allows you to select a skill of the player and change the value of the skill.
     * **Change player skill value**: Allows you to select a skill of the npc and change the value of the skill.
+    * **Save dialog state**: Marks this point in the dialog as a continue point if the dialog is stopped and the player talks to the npc again. This way you can mark the dialog state after an introduction and the next time the player talks to the npc the dialog will continue at this state.
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
