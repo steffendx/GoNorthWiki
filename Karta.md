@@ -3,7 +3,7 @@ Please note: While a user edits a map this map will be readonly for other users 
 
 ## Map Form
 In the map form you will see the map as the main part. You can navigate the map with the mouse and the mouse wheel or using touch input. On the top right you will find drop down list to be able to switch the chapter for which you are editing the markers (see more below) and a drop down list to switch the current map.  
-On top of the map a bunch of checkboxes exist that allow you to hide / show different marker types.  
+On top of the map a bunch of checkboxes exist that allow you to hide / show different marker types and the labels.  
 On the left of the map the different types of markers that a user can add to the map are shown. You can select an object there and then click in the map to add a new marker to the map. The following types of markers can be selected:
  * **Kirja**: By using the search box you can search for the page you want to add to the map. You can also select &lt;New Page&gt;. If you select &lt;New Page&gt; a new window will be opened on placing the marker that allows you to create a new wiki page. Upon saving the new page a new marker will be added to the mark. This can be used to add more information to a location on the map (like explaining a ruin, the backstory of a tavern and much more)
  * **Kortisto**: You can use the search box to search for a npc you want to place on the map. You can place a npc more than one time on the map. This way you can add a character on the map or add multiple enemies on the map.

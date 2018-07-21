@@ -22,7 +22,7 @@ By clicking on an existing template, existing npc, creating a new npc or creatin
 At the top of the form you will find several buttons:
  * **Save**: Will save the current npc or template
  * **Save & distribute fields to npcs**: This button is only available if you are working on a template. By pressing this button the template will be saved and all new fields will be distributed to all npcs based on this template. Please note: If you delete a field from a npc and distribute the fields of the template this field will be added again.
- * **Add field**: This drop down list allows you to add a new field to the current npc or template. You can choose between a single line text field, multi line text field and a number field. After selecting a field type you must provide a name of the field and add it to the npc or template.
+ * **Add field**: This drop down list allows you to add a new field to the current npc or template. You can choose between a single line text field, multi line text field, a number field and a dropdown field. After selecting a field type you must provide a name of the field and add it to the npc or template.
  * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker and working on a npc. If the current npc is not implemented you can click on this button to see the changes to the npc and flag it as implemented. If the current npc is already implemented this button will be labeled with implemented and be disabled.
  * **Dialog**: This button is only available if you are working on a npc and have the Tale role. By clicking this button you will switch to the [dialog of the npc](/steffendx/GoNorth/wiki/Tale).
  * **Name generator**: This button is only available if you are working on a template. By clicking this button you will be able to setup the name generator template. In the dialog you can enter the template by using different placeholders and test the generated names. You can find more information about the algorithm [here](http://rinkworks.com/namegen/instr.shtml) and [here](http://rinkworks.com/namegen/reference.shtml).
@@ -42,7 +42,7 @@ In the main part of the form you will see the name of the npc and the list of fi
  In the dialog you can set the following values:
    * **Additional script names**: You can provide additional names for script exporting here. This allows you to export the field to the script multiple times with different names. This way you can export CurrentHealth as MaxHealth as well for example.
    * **Dont export to script**: Dont export the selected field to the script.
- * **Pencil**: You can rename the field by clicking this icon.
+ * **Pencil**: You can rename the field by clicking this icon and edit the available options for an option field.
  * **Trash bin**: You can delete the field by clicking this icon.
 
 ### Inventory

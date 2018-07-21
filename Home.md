@@ -11,6 +11,8 @@ Table of contents:
    * [Evne (Skill)](/steffendx/GoNorth/wiki/Evne)
    * [Kirja (Wiki)](/steffendx/GoNorth/wiki/Kirja)
    * [Karta (Maps)](/steffendx/GoNorth/wiki/Karta)
+   * [Exporting](/steffendx/GoNorth/wiki/Export)
+   * [Export Templates](/steffendx/GoNorth/wiki/Export)
    * [Implementation Status Tracking](/steffendx/GoNorth/wiki/Implementation-Status-Tracking)
    * [Task Management](/steffendx/GoNorth/wiki/Task-Management)
  * Implementation:
@@ -19,4 +21,5 @@ Table of contents:
    * [Database Access Implementation](/steffendx/GoNorth/wiki/Database-Access-Implementation)
    * [Documentation](/steffendx/GoNorth/wiki/Documentation)
    * [Node Graph Implementation](/steffendx/GoNorth/wiki/Node-Graph-Implementation)
+   * [Export Implementation](/steffendx/GoNorth/wiki/Export-Implementation)
    * [Wiki Contribution](/steffendx/GoNorth/wiki/Wiki-Contribution)
