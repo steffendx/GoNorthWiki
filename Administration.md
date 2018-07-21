@@ -28,6 +28,8 @@ The following roles are available for users:
  * **Tale**: Allows a user to edit the dialogs of npcs in the dialog planning module Tale.
  * **Aika**: Allows a user to edit chapters and quests in the quest planning module Aika.
  * **ImplementationStatusTracker**: Allows a user to flag objects to which he or she has access as implemented. A user which has no access to Styr for example will not be able to track the implementation status of items.
+ * **ExportObjects**: Allows a user to export npcs, dialogs, items and skills
+ * **ManageExportTemplates**: Allows a user to manage export templates
 
 ## Project Management
 To be able to extend GoNorth to allow multiple projects in parallel on which different users are working in the future I've implemented projects. At the moment all objects will be associated to the current default project. This means you have to have at least one default project at any time to be able to work with GoNorth.
