@@ -10,7 +10,7 @@
    * [Kirja (Wiki)](/steffendx/GoNorth/wiki/Kirja)
    * [Karta (Maps)](/steffendx/GoNorth/wiki/Karta)
    * [Exporting](/steffendx/GoNorth/wiki/Export)
-   * [Export Templates](/steffendx/GoNorth/wiki/Export)
+   * [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates)
    * [Implementation Status Tracking](/steffendx/GoNorth/wiki/Implementation-Status-Tracking)
    * [Task Management](/steffendx/GoNorth/wiki/Task-Management)
  * Implementation:
