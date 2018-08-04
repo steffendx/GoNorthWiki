@@ -14,6 +14,7 @@ On the left of the map the different types of markers that a user can add to the
 
 ### Editing Markers
 You can edit markers by simply dragging them. After releasing the marker it will be saved. By clicking on a marker a popup will be shown. At the bottom right of the popup you will find icons for editing the marker:
+ * **Link**: By clicking this link icon you can copy a link to the marker. Upon opening the link the map will zoom on the selected marker and open the popup.
  * **Circle**: By clicking this circle you can edit additional geometry for the marker. This geometry can be a line, polygon, rectangle or circle. You can find more info below, see **Editing marker geometry**.
  * **Pencil**: The pencil will only be available for quest markers and notes. By clicking on this icon you can rename the marker or change the description.
  * **Cross**: If you are in the Implementation Status Tracker role you will see a cross if the marker is not implemented. By clicking on the cross a dialog will open that allows you to flag the marker as implemented. If the marker is already implemented a check marker will be shown instead that is not clickable.

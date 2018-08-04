@@ -36,7 +36,7 @@ Below the buttons you will find the possible nodes you can drag into the graph s
 ## Quest detail view
 In the quest detail view you will find the following buttons at the top:
  * **Save**: Saves the quest
- * **Add field**: This drop down list allows you to add a new field to the quest. You can choose between a single line text field, multi line text field and a number field. After selecting a field type you must provide a name of the field and add it to the quest.
+ * **Add field**: This drop down list allows you to add a new field to the quest. You can choose between a single line text field, multi line text field and, a number field, a dropdown field and a field group. After selecting a field type you must provide a name of the field and add it to the quest.
  * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker. If the quest is not implemented you can click on this button to see the changes to the quest and flag it as implemented. If the current quest is already implemented this button will be labeled with implemented and be disabled.
  * **Delete**: Allows the user to delete the quest. Please note: A quest can only be deleted if not used in any chapter detail view.
 
@@ -47,10 +47,10 @@ Below the buttons you will find the header data area of the quest which you can 
 
 ### Fields
 Below the header data you will find the fields area which you can collapse or expand. Here you will see all the fields that are currently added to the quest. On the right to each field you will find the following icons:
- * **Arrows**: By clicking on the arrows you can rearrange the fields
+ * **Arrows**: By clicking and dragging the arrows you can rearrange the fields
  * **Door with arrow**: By clicking this icon you can change the script settings of the field.  
  Please note: Currently this has no effect since script exporting is not yet implemented. I've implemented this to allow users to already set these values when creating quests to be ready for exporting.  
- This is not available for multi line text fields since they will not be exported to a script any way.  
+ This is not available for multi line text fields and field groups since they will not be exported to a script any way.  
  In the dialog you can set the following values:
    * **Additional script names**: You can provide additional names for script exporting here. This allows you to export the field to the script multiple times with different names. This way you can export StartHintCount as CurrentHintcount as well for example.
    * **Dont export to script**: Dont export the selected field to the script.

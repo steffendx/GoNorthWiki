@@ -22,7 +22,7 @@ By clicking on an existing template, existing item, creating a new item or creat
 At the top of the form you will find several buttons:
  * **Save**: Will save the current item or template
  * **Save & distribute fields to items**: This button is only available if you are working on a template. By pressing this button the template will be saved and all new fields will be distributed to all items based on this template. Please note: If you delete a field from an item and distribute the fields of the template this field will be added again.
- * **Add field**: This drop down list allows you to add a new field to the current item or template. You can choose between a single line text field, multi line text field and, a number field and a dropdown field. After selecting a field type you must provide a name of the field and add it to the item or template.
+ * **Add field**: This drop down list allows you to add a new field to the current item or template. You can choose between a single line text field, multi line text field and, a number field, a dropdown field and a field group. After selecting a field type you must provide a name of the field and add it to the item or template.
  * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker and working on a item. If the current item is not implemented you can click on this button to see the changes to the item and flag it as implemented. If the current item is already implemented this button will be labeled with implemented and be disabled.
  * **Delete**: Allows the user to delete the item or template.
 
@@ -31,10 +31,10 @@ On the left side the picture of the current item will be displayed. If no pictur
 
 ### Field list
 In the main part of the form you will see the name of the item and the list of fields of the item. Here you can change the values of the fields. Additionally you can use one of the following buttons on the right of the name of the field:
- * **Arrows**: By clicking on the arrows you can rearrange the fields
+ * **Arrows**: By clicking and dragging the arrows you can rearrange the fields
  * **Door with arrow**: By clicking this icon you can change the script settings of the field.  
  Please note: Currently this has no effect since script exporting is not yet implemented. I've implemented this to allow users to already set these values when creating quests to be ready for exporting.  
- This is not available for multi line text fields since they will not be exported to a script any way.  
+ This is not available for multi line text fields and field groups since they will not be exported to a script any way.  
  In the dialog you can set the following values:
    * **Additional script names**: You can provide additional names for script exporting here. This allows you to export the field to the script multiple times with different names. This way you can export CurrentHealLeft as MaxHeal as well for example.
    * **Dont export to script**: Dont export the selected field to the script.
