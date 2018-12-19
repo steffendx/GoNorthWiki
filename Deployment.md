@@ -59,7 +59,7 @@ If you already have GoNorth installed and want to simply update an existing inst
  * Start GoNorth
  * Navigate to the Admin Page -> Setup DB to make sure you have all the latest indices added to the database.
 
-**Please note**: If you have a GoNorth version installed prior to 1.4.0 you might need to upgrade your .Net Core version to 2.2.
+**Please note**: If you have a GoNorth version installed prior to 1.4.0.0 you might need to upgrade your .Net Core version to 2.2.
 
 ## Adjust configuration
 You will have to adjust the config file to your settings. You can find the config settings in the "appsettings.json" file. If you want to adjust values for development you can adjust the "appsettings.development.json" file.
