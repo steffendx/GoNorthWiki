@@ -2,6 +2,7 @@
 * [Deployment](/steffendx/GoNorth/wiki/Deployment)
  * Usage:
    * [Administration](/steffendx/GoNorth/wiki/Administration)
+   * [Timeline](/steffendx/GoNorth/wiki/Timeline)
    * [Aika (Chapter & Quests)](/steffendx/GoNorth/wiki/Aika)
    * [Kortisto (Npcs)](/steffendx/GoNorth/wiki/Kortisto)
    * [Tale (Dialogs)](/steffendx/GoNorth/wiki/Tale)
@@ -13,11 +14,14 @@
    * [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates)
    * [Implementation Status Tracking](/steffendx/GoNorth/wiki/Implementation-Status-Tracking)
    * [Task Management](/steffendx/GoNorth/wiki/Task-Management)
+   * [GDPR Support](/steffendx/GoNorth/wiki/Gdpr)
+   * [Legal Notice](/steffendx/GoNorth/wiki/Legal-Notice)
  * Implementation:
    * [Implementation Overview](/steffendx/GoNorth/wiki/Implementation-Overview)
    * [Localization](/steffendx/GoNorth/wiki/Localization)
    * [Database Access Implementation](/steffendx/GoNorth/wiki/Database-Access-Implementation)
    * [Documentation](/steffendx/GoNorth/wiki/Documentation)
+   * [Swagger](/steffendx/GoNorth/wiki/Swagger)
    * [Node Graph Implementation](/steffendx/GoNorth/wiki/Node-Graph-Implementation)
    * [Export Implementation](/steffendx/GoNorth/wiki/Export-Implementation)
    * [Wiki Contribution](/steffendx/GoNorth/wiki/Wiki-Contribution)

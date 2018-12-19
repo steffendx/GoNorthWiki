@@ -1,6 +1,6 @@
 ## Quick Start using Release package on local machine
 You will have to follow these steps to start GoNorth using the Release package:
- * [Install .Net Core](https://www.microsoft.com/net/learn/get-started). Be sure to select the correct plattform for your system
+ * [Install .Net Core](https://www.microsoft.com/net/learn/get-started). Be sure to select the correct plattform for your system. GoNorth requires .Net Core 2.2.
  * [Install MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/)
  * Start MongoDB if its not already running:
    * Open a command line
@@ -51,6 +51,16 @@ If you want to you can also:
 
 More details about deploying can be found in this page below.
 
+## Updating an existing Deployment
+If you already have GoNorth installed and want to simply update an existing installation you can do the following:
+ * Stop GoNorth
+ * Replace the existing files with the lastest [Release Package](https://github.com/steffendx/GoNorth/releases) files while keeping all files that are not getting overwritten.  
+   **Attention**: Be careful about replacing the appsetting files to not overwrite your customized settings. You might need to merge the appsettings files by hand if new keys werde added in a new release
+ * Start GoNorth
+ * Navigate to the Admin Page -> Setup DB to make sure you have all the latest indices added to the database.
+
+**Please note**: If you have a GoNorth version installed prior to 1.4.0 you might need to upgrade your .Net Core version to 2.2.
+
 ## Adjust configuration
 You will have to adjust the config file to your settings. You can find the config settings in the "appsettings.json" file. If you want to adjust values for development you can adjust the "appsettings.development.json" file.
 
@@ -68,7 +78,15 @@ In the logging section you can specify your log levels. Possible values are "Tra
 The following settings can be made in the Misc Section:
  * **ExternalUrl**: Specifies the url used when filling E-Mail Templates for resetting passwords etc. This is required to correctly fill the templates when using a reverse proxy for hosting.
  * **KirjaAllowedAttachmentMimeTypes**: This specifies which Mime-Types are allowed for attachments in the Wiki Component Kirja.
+ * **KirjaVersionMergeTimeSpan**: Specifies the timespan in minutes for a Kirja Page version to be merged if it was edited by the same user. This prevents to many versions to be spammed. If the value is zero or negative, no versions will be merged. You can read more details in the [Kirja](/steffendx/GoNorth/wiki/Kirja) wiki page.
+ * **KirjaMaxVersionCount**: Specifies the maximum amount of version to be kept for a Kirja Page. If the value is equal to zero, the versioning feature will be disabled. If the value is below zero an unlimited amount of versions will be kept. More details can be read in the [Kirja](/steffendx/GoNorth/wiki/Kirja) wiki page.
+ * **TimelineMergeTimeSpan**: Specifies the timespan in minutes for timeline events to be merged if made for the same event for the same user (for example if a user modifies the same wiki page in a timespan of 5 minutes). This way you can prevent flodding of timeline events. If the value is below or equal zero, no timeline events will be merged.
  * **FirstTimeDeploymentPassword**: Specifies the password used for the first time deployment page (see below). It is recommended to leave this blank if you have the portal up and running.
+ * **UseGdpr**: True if the GDPR feature should be used, else false. More details can be found on the [GDPR wiki page](/steffendx/GoNorth/wiki/Gdpr).
+ * **UseLegalNotice**: True if the Legal Notice feature should be used, else false. More details can be found on the [legal notice wiki page](/steffendx/GoNorth/wiki/Legal-Notice).
+
+### Legal Notice Settings
+If you are using the [legal notice](/steffendx/GoNorth/wiki/Legal-Notice) you can adjust the contact details shown on the legal notice page in the LegalNotice section.
 
 ## Building
 Since GoNorth is build with .Net Core you will have to install .Net Core on your system for building. (See [Getting Started with .Net Core](https://www.microsoft.com/net/learn/get-started)). Before building the project I recommend you adjust the encryption key bytes in the "/Services/Encryption/AesEncryptionService.cs" to a new value.
@@ -94,7 +112,7 @@ This will start a new webserver listening on port 5000. Alternatively you can si
 If your MongoDB is running you can now connect to the portal. But you will have to create a new admin user, see First Time Deployment below on how to create this user.
 
 ## Hosting GoNorth in your production environment
-Please refer to the [official documentation on how to host and deploy an ASP.Net Core application](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?tabs=aspnetcore2x) for hosting GoNorth in a your production environment.
+Please refer to the [official documentation on how to host and deploy an ASP.Net Core application](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?tabs=aspnetcore2x) for hosting GoNorth in a your production environment. Keep in mind that GoNorth requires .Net Core 2.2.
 
 If you use nginx or any other reverse proxy you will have to adjust the maximum upload size and the maximum header size. This is required to be able to upload big images for maps in Karta and ensure stability.  
 I use the following settings in nginx for example:
@@ -123,7 +141,7 @@ After adjusting the config you have to restart the web service.
 ## Creating users / Adjusting roles
 You can now create new users and adjust your roles to make the different modules available to you and other users.  
 Please note: You will have to sign out and sign in again in order for the role changes to take effect.  
-More details for this can be found on the [Admin Wiki Page](Administration.md)
+More details regarding this can be found on the [Admin Wiki Page](/steffendx/GoNorth/wiki/Administration)
 
 ## Creating a project
 Since GoNorth will not work without a default project, you will also have to create a new default project in the admin project managment page. Just provide your project name and flag it as a default project.  

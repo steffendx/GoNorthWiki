@@ -1,0 +1,2 @@
+GoNorth exposes a [swagger](https://swagger.io/) endpoint to help you working with the GoNorth Web-API. This swagger endpoint will only be available if GoNorth is build in development mode. This way a possible attacker can not easily read the api definition. You can find the Swagger UI by navigating to **/swagger**.  
+If you want to simply take a look at the swagger file itself you can navigate to **/swagger/v1/swagger.json**.

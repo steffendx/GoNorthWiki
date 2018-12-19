@@ -42,4 +42,5 @@ After creating a project you will see a list of projects. The current default pr
 On this page you can encrypt values for the config file. Simply enter your value in the config value textbox and press encrypt. Afterwards you can copy your encrypted value from the encrypted config value box into your config file.
 
 ## Setup DB
-If you click on this page GoNorth will create all missing collections in the MongoDB. This is not really required since your MongoDB will create the collections once you access them as well. I mainly needed this for some tests. But maybe I will create some indices on this page or migrate old data in the future.
+If you click on this page GoNorth will create all missing collections in the MongoDB. This is not really required since your MongoDB will create the collections once you access them as well.  
+But GoNorth will also create some indices in the MongoDB to speed up access. This will increase the performance on the timeline page by quite a bit.
