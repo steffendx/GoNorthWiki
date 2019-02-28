@@ -4,6 +4,7 @@ Please note: While a user edits a dialog this dialog will be readonly for other 
 On the page you will see the following buttons at the top:
  * **Save**: Saves the current dialog
  * **Mark as implemented**: This button will only be visible if you are a member of the Implementation Status Tracker role. If the current dialog is not implemented you can click on this button to see the changes to the dialog and flag it as implemented. If the current dialog is already implemented this button will be labeled with implemented and be disabled.
+ * **Configuration**: If you have the TaleConfigManager role you can click this button to manage some configuration values for Tale. (see below)
  * **Back to npc**: By clicking this button you will return to the npc to which the dialog belongs.
 
 Below the buttons you will find the available nodes. You can drag a node into the node graph below to add it to the dialog.  
@@ -26,8 +27,8 @@ The following nodes are available:
     * **Change quest state**: Allows you to change the state of a quest
     * **Add quest text**: Allows you to add text to a quest log
     * **Wait**: Allows you to specify an amount of time to wait. The time can be specified in real time or game time.
-    * **Change player state**: Allows you to change the state of the player. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the player is confused for example.
-    *  **Change npc state**: Allows you to change the state of the npc. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the npc is angry for example.
+    * **Change player state**: Allows you to change the state of the player. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the player is confused for example. You can configure proposed states in the config section (see below).
+    * **Change npc state**: Allows you to change the state of the npc. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the npc is angry for example. You can configure proposed states in the config section (see below).
     * **Player learns skill**: Allows you to select a skill the player learns
     * **Player forgets skills**: Allows you to select a skill the player forgets
     * **Npc learns skill**: Allows you to select a skill the npc learns
@@ -35,6 +36,9 @@ The following nodes are available:
     * **Change player skill value**: Allows you to select a skill of the player and change the value of the skill.
     * **Change player skill value**: Allows you to select a skill of the npc and change the value of the skill.
     * **Save dialog state**: Marks this point in the dialog as a continue point if the dialog is stopped and the player talks to the npc again. This way you can mark the dialog state after an introduction and the next time the player talks to the npc the dialog will continue at this state.
+    * **Open shop**: Allows you to mark the start of a trade between the player and the npc.
+    * **Play npc animation**: Allows you to specify an animation that must be played for the npc. You can configure a list of animations that will be proposed in the config area (see below). But you will be able to also enter a different animation. This way you can have unqiue animations for some npcs and prevent flooding of the proposed animations.
+    * **Play player animation**: Allows you to specify an animation that must be played for the player. You can configure a list of animations that will be proposed in the config area (see below). But you will be able to also enter a different animation. This way you can have unqiue animations for some npcs and prevent flooding of the proposed animations.
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
@@ -75,3 +79,13 @@ On the right of each condition you will find the following icons:
 
 At the bottom you can press confirm to confirm the condition and cancel to cancel the editing of the condition.
 
+## Config
+If you have the TaleConfigManager role assigned you can navigate to the Tale config area. In this area you can configure values that are shared for all dialogs and help building the dialogs. You can expand or collapse each config section by clicking on the title.
+
+### Play animation config
+This area allows you to enter proposed animations for the play animation nodes. Each line in the textarea will be one proposed animation in the node. By entering animation names here you can prevent problems with typos or users entering animations that don't exist.  
+**Please note:** Users will still be able to enter animations that are not configured in this area. This way a user can enter a unique animation for a dialog and one does not have to flood the animation configuration.
+
+### Set state config
+This area allows you to enter proposed states for the change state nodes. Each line in the textarea will be one proposed state in the node. By entering state names here you can prevent problems with typos or users entering states that don't exist.  
+**Please note:** Users will still be able to enter states that are not configured in this area. This way a user can enter a unique state for a dialog and one does not have to flood the state configuration.
