@@ -55,6 +55,28 @@ By clicking the Add skill button you can add a new skill the npc can cast. You w
 Below you will see a table with all the skills that the npc can cast.  
 On the most right you will be able click the trash bin icon to delete the skill.
 
+### Daily routines
+In this section you can define the daily routine of the npc, as well as displaying it.  
+
+In the table of this section you will see all daily routine events that were already created for this npc. This table will be sorted using the time of the events. To get a clearer view of the default daily routine you can hide disabled events using the "Hide disabled events" button.  
+If an event has a script associated to it, you can click on the name of the script to edit it.  
+On the right of each event you will find the following buttons:
+ * **Pencil**: Allows you to edit the time of the event and change if it is disabled by default or not.
+ * **Trash bin**: You can delete the event using this icon.
+
+Using the new movement target button you will be redirected to Karta where you can place the different movement targets of the npc during the day. You can find more details on this in the [Karta wiki page](/steffendx/GoNorth/wiki/Karta#npc-daily-routine).  
+By pressing the New script event button, a dialog will open that allows you to specify the time of day at which this event triggers. You can specify an earliest and latest time to give the daily routine of the npc a bit more varity. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config). Here you can also select if this event is activated by default or not (you can activate the daily routine later on using an "enable daily routine event" action in a node system for example.)  
+After pressing next you will have to choose if you want to add a node system script or a code script. **Please note:** This can not be changed later on.  
+
+#### Node system
+If you choose to create a node system as script you can use condition and action nodes to specify the action that should be run. You can find more details on building a script using a node system in the [Tale](/steffendx/GoNorth/wiki/Tale) wiki page.  
+You will also have to specify a name for better usability.
+
+#### Code sript
+If you create a code script an editor will open where you can enter an arbitrary script that should be run. This gives you maximal flexibility, but will require coding skills and might be harder to maintain later on because you can not simply change a template.  
+You will also have to specify a name for better usability.
+
+
 ### Tags
 In the tag box you can assign tags to the current template or npc. These tags are used in the npc search (either in the npc list page or when choosing a npc in the object select dialog).
 

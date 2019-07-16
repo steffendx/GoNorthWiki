@@ -67,8 +67,8 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check pick quest value**: Allows you to pick a quest and check a value of this quest
  * **Check quest state**: Allows you to pick a quest and check the state of the quest
  * **Check npc alive state**: Allows you to pick a npc and check if the npc is alive or dead
- * **Check game time**: Allows you check if the current game time is before or after a specified 
- time.
+ * **Check game time**: Allows you check if the current game time is before or after a specified time. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).
+ * **Check random value**: Allows you to compare a random value to a certain value using different operators. This can be used if you want to add some varity in a skill.
 
 On the right of each condition you will find the following icons:
  * **Arrows**: Allows you to rearrange the conditions

@@ -77,6 +77,17 @@ The following nodes can be dragged into the node graph system:
     * **Player learns skill**: Allows you to select a skill the player learns
     * **Player forgets skills**: Allows you to select a skill the player forgets
     * **Change player skill value**: Allows you to select a skill of the player and change the value of the skill.
+    * **Fade to black**: By using this action you can fade the screen to black (for example if you want to change the time or teleport the player). You can specify how long it will take to fade the screen to black.
+    * **Fade from black**: By using this action you can fade the screen back to normal after fading it to black before. You can specify how long it will take to fade the screen back to normal.
+    * **Set game time**: Allows you to set the game time. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).
+    * **Disable daily routine event**: This action disables the daily routine event of an npc. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
+    * **Enable daily routine event**: This action enables the daily routine event of an npc. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
+    * **Teleport player**: This action will teleport the player to a target marker. You will have to specify an export name for a marker to be able to find it in the picker dialog, check the [Karta](/steffendx/GoNorth/wiki/ Karta#editing-markers) wiki page for details.
+    * **Teleport pick npc**: This action allows you to pick an npc using a picker dialog and a target marker to which this npc will be teleported. You will have to specify an export name for a marker to be able to find it in the picker  dialog, check the [Karta](/steffendx/GoNorth/wiki/Karta#editing-markers) wiki page for details.
+    * **Walk pick npc**: This action allows you to pick an npc using a picker dialog and a target marker to which this npc will walk. You will have to specify an export name for a marker to be able to find it in the picker dialog,  check the [Karta](/steffendx/GoNorth/wiki/Karta#editing-markers) wiki page for details.
+    * **Teleport pick npc to npc**: This action allows you to pick an npc using a picker dialog and a target npc to which this npc will be teleported.
+    * **Walk pick npc to npc**: This action allows you to pick an npc using a picker dialog and a target npc to which this npc will walk.
+
  * **All done**: An all done node can be used to indicate that multiple steps need to be finished before the next step can proceed. This way you can drag the success output of three nodes into the input port of the All done node and then drag the output port of the node into the next step for example. This shows that all three steps must be completed successfully to continue the quest.
  * **Finish**: A finish node indicates a possible finish of the quest. You have to provide a name for the quest and can select a color. This way you can for example have two finish nodes for the quest "Success", "Failed" after an action node to set the quest status. But you could also have to different success finishes. In the chapter detail view these finished will be shown as output ports and the lines going away from this output port will have the selected color. This way its easy to follow the different story path in the detail view.
 
@@ -91,11 +102,14 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check pick quest value**: Allows you to pick a quest and check a value of the quest
  * **Check quest state**: Allows you to pick a quest and check the state of the quest
  * **Check npc alive state**: Allows you to pick a npc and check if the npc is alive or dead
- * **Check game time**: Allows you check if the current game time is before or after a specified time.
+ * **Check game time**: Allows you check if the current game time is before or after a specified time. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).
  * **Check player distance to quest marker**: Allows you to pick a quest marker and specify a distance to which the player needs to be. This way you can specify a certain point the player needs to be or maybe is not allowed to leave.
  * **Check player skill value**: Checks the value of a skill the player can cast. You can pick the skill using a dialog and specify the value condition.
  * **Player can use skill**: Checks if the player can use a skill
  * **Player can not use skill**: Checks if the player can not use a skill
+ * **Check random value**: Allows you to compare a random value to a certain value using different operators. This can be used if you want to add some varity in a quest.
+ * **Check daily routine event is disabled**: Checks if a daily routine event of an npc is disabled. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
+ * **Check daily routine event is active**: Checks if a daily routine event of an npc is enabled. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
 
 On the right of each condition you will find the following icons:
  * **Arrows**: Allows you to rearrange the conditions

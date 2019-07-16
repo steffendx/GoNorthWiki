@@ -14,11 +14,40 @@ On the left of the map the different types of markers that a user can add to the
 
 ### Editing Markers
 You can edit markers by simply dragging them. After releasing the marker it will be saved. By clicking on a marker a popup will be shown. At the bottom right of the popup you will find icons for editing the marker:
+ * **Hourglass**: This button will only show up for npc markers. By clicking this button you can enter the edit mode of the daily routine for the selected npc ([see below](#npc-daily-routine))
+ * **Arrow with square**: By clicking this button you can specify an export name for the marker. This is required if you want to use an action to teleport an npc to the marker or have the npc walk to it.  
+ If the marker already has an export name specified, this button will turn green and show the export name on hover.
  * **Link**: By clicking this link icon you can copy a link to the marker. Upon opening the link the map will zoom on the selected marker and open the popup.
  * **Circle**: By clicking this circle you can edit additional geometry for the marker. This geometry can be a line, polygon, rectangle or circle. You can find more info below, see **Editing marker geometry**.
- * **Pencil**: The pencil will only be available for quest markers and notes. By clicking on this icon you can rename the marker or change the description.
+ * **Pencil**: The pencil will only be available for quest markers, notes and daily routine events. By clicking on this icon you can rename the marker, change the description or change details of the daily routine event.
  * **Cross**: If you are in the Implementation Status Tracker role you will see a cross if the marker is not implemented. By clicking on the cross a dialog will open that allows you to flag the marker as implemented. If the marker is already implemented a check marker will be shown instead that is not clickable.
  * **Trash bin**: By clicking this icon you can delete the marker.
+
+## Npc Daily routine
+If you got redirected to Karta using the "New movement target" button in [Kortisto](/steffendx/GoNorth/wiki/Kortisto#daily-routines) or pressed the hourglass (see above) you will enter the daily routine editing event. To leave this mode simply select a marker in the list to the left.  
+
+Once the daily routine editing mode is activated you will see the movement targets of the npc as markers and an arrow between them that shows the movement of the npc during the day.  
+You can add a new movement target simply by clicking on the map. You will have to specify the following values in the dialog that opens:
+ * The name of the movement target. This is used to help you keep track of the routine. If you want to use a different name for exporting you can specify an export name ([see above](#editing-markers))
+ * The earliest and latest time at which the npc starts to walk towards the target. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).
+ * The optional target state. By specifying a target state you can have the npc walk to a field and change the npc to a harvesting state for example.
+ * If you need to do something more sophisticated than just changing the npc to a state, you can specify an optional script that will be run when the npc arrives at the target ([see below](#daily-routine-scripts))
+ * If this event is activated by default or not (you can activate the daily routine later on using an "enable daily routine event" action in a node system for example.)  
+
+You can also drag and drop markers to change the position and edit them by pressing the pencil button in the marker popup. You can also delete them using the trash bin button the popup.  
+
+Apart from adding new markers and seeing the markers, you can press the big hourglass at the top next to the chapter switch dropdown to show all events that were created for the npc. This way you can figure out if a script event is run at a certain time to not have conflicts between movement targets and pure script events.  
+
+### Daily routine scripts
+If you create a script for a movement target you will have to choose if you want to add a node system script or a code script. **Please note:** This can not be changed later on.  
+
+#### Node system
+If you choose to create a node system as script you can use condition and action nodes to specify the action that should be run. You can find more details on building a script using a node system in the [Tale](/steffendx/GoNorth/wiki/Tale) wiki page.  
+You will also have to specify a name for better usability.
+
+#### Code sript
+If you create a code script an editor will open where you can enter an arbitrary script that should be run. This gives you maximal flexibility, but will require coding skills and might be harder to maintain later on because you can not simply change a template.  
+You will also have to specify a name for better usability.
 
 ## Editing geometry
 When entering the geometry edit mode, using the circle icon in a marker popup, new toolbar buttons will be shown on the left side of the map. You can find the following buttons there:

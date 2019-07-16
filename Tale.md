@@ -4,7 +4,6 @@ Please note: While a user edits a dialog this dialog will be readonly for other 
 On the page you will see the following buttons at the top:
  * **Save**: Saves the current dialog
  * **Mark as implemented**: This button will only be visible if you are a member of the Implementation Status Tracker role. If the current dialog is not implemented you can click on this button to see the changes to the dialog and flag it as implemented. If the current dialog is already implemented this button will be labeled with implemented and be disabled.
- * **Configuration**: If you have the TaleConfigManager role you can click this button to manage some configuration values for Tale. (see below)
  * **Back to npc**: By clicking this button you will return to the npc to which the dialog belongs.
 
 Below the buttons you will find the available nodes. You can drag a node into the node graph below to add it to the dialog.  
@@ -27,8 +26,8 @@ The following nodes are available:
     * **Change quest state**: Allows you to change the state of a quest
     * **Add quest text**: Allows you to add text to a quest log
     * **Wait**: Allows you to specify an amount of time to wait. The time can be specified in real time or game time.
-    * **Change player state**: Allows you to change the state of the player. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the player is confused for example. You can configure proposed states in the config section (see below).
-    * **Change npc state**: Allows you to change the state of the npc. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the npc is angry for example. You can configure proposed states in the config section (see below).
+    * **Change player state**: Allows you to change the state of the player. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the player is confused for example. You can configure proposed states in the [Project config](/steffendx/GoNorth/wiki/Project-Config).
+    * **Change npc state**: Allows you to change the state of the npc. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the npc is angry for example. You can configure proposed states in the [Project config](/steffendx/GoNorth/wiki/Project-Config).
     * **Player learns skill**: Allows you to select a skill the player learns
     * **Player forgets skills**: Allows you to select a skill the player forgets
     * **Npc learns skill**: Allows you to select a skill the npc learns
@@ -37,8 +36,27 @@ The following nodes are available:
     * **Change player skill value**: Allows you to select a skill of the npc and change the value of the skill.
     * **Save dialog state**: Marks this point in the dialog as a continue point if the dialog is stopped and the player talks to the npc again. This way you can mark the dialog state after an introduction and the next time the player talks to the npc the dialog will continue at this state.
     * **Open shop**: Allows you to mark the start of a trade between the player and the npc.
-    * **Play npc animation**: Allows you to specify an animation that must be played for the npc. You can configure a list of animations that will be proposed in the config area (see below). But you will be able to also enter a different animation. This way you can have unqiue animations for some npcs and prevent flooding of the proposed animations.
-    * **Play player animation**: Allows you to specify an animation that must be played for the player. You can configure a list of animations that will be proposed in the config area (see below). But you will be able to also enter a different animation. This way you can have unqiue animations for some npcs and prevent flooding of the proposed animations.
+    * **Play npc animation**: Allows you to specify an animation that must be played for the npc. You can configure a list of animations that will be proposed in the [Project config](/steffendx/GoNorth/wiki/Project-Config). But you will be able to also enter a different animation. This way you can have unqiue animations for some npcs and prevent flooding of the proposed animations.
+    * **Play player animation**: Allows you to specify an animation that must be played for the player. You can configure a list of animations that will be proposed in the [Project config](/steffendx/GoNorth/wiki/Project-Config). But you will be able to also enter a different animation. This way you can have unqiue animations for some npcs and prevent flooding of the proposed animations.
+    * **Script code**: This action can be used if a you have to implement a special action that can not be covered using the node system. For this the action allows you to open a code editor and enter any script code you want. You will have to specify a name for the script for better usability.
+    * **Show text above npc**: Using this action you can show a floating text above the npc.
+    * **Show text above player**: Using this action you can show a floating text above the player.
+    * **Show text above pick npc**: Using this action you can show a floating text above the any npc. You can use a dialog to select the npc above which the text must be shown.
+    * **Fade to black**: By using this action you can fade the screen to black (for example if you want to change the time or teleport the player). You can specify how long it will take to fade the screen to black.
+    * **Fade from black**: By using this action you can fade the screen back to normal after fading it to black before. You can specify how long it will take to fade the screen back to normal.
+    * **Set game time**: Allows you to set the game time. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).
+    * **Disable daily routine event**: This action disabled the daily routine event of an npc. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
+    * **Enable daily routine event**: This action enables the daily routine event of an npc. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
+    * **Teleport npc**: This action will teleport the npc to a target marker. You will have to specify an export name for a marker to be able to find it in the picker dialog, check the [Karta](/steffendx/GoNorth/wiki/Karta#editing-markers) wiki page for details.
+    * **Teleport player**: This action will teleport the player to a target marker. You will have to specify an export name for a marker to be able to find it in the picker dialog, check the [Karta](/steffendx/GoNorth/wiki/ Karta#editing-markers) wiki page for details.
+    * **Teleport pick npc**: This action allows you to pick an npc using a picker dialog and a target marker to which this npc will be teleported. You will have to specify an export name for a marker to be able to find it in the picker  dialog, check the [Karta](/steffendx/GoNorth/wiki/Karta#editing-markers) wiki page for details.
+    * **Walk npc**: This action will make the npc walk to a target marker. You will have to specify an export name for a marker to be able to find it in the picker dialog, check the [Karta](/steffendx/GoNorth/wiki/Karta#editing-markers)  wiki page for details.
+    * **Walk pick npc**: This action allows you to pick an npc using a picker dialog and a target marker to which this npc will walk. You will have to specify an export name for a marker to be able to find it in the picker dialog,  check the [Karta](/steffendx/GoNorth/wiki/Karta#editing-markers) wiki page for details.
+    * **Teleport npc to npc**: This action will teleport the npc to a target npc. You can select the target npc using the npc picker dialog.
+    * **Teleport player to npc**: This action will teleport the player to a target npc. You can select the target npc using the npc picker dialog.
+    * **Teleport pick npc to npc**: This action allows you to pick an npc using a picker dialog and a target npc to which this npc will be teleported.
+    * **Walk npc to npc**: This action will make the npc walk to a target npc. 
+    * **Walk pick npc to npc**: This action allows you to pick an npc using a picker dialog and a target npc to which this npc will walk.
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
@@ -63,14 +81,16 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check npc inventory**: Allows you to pick an item that will be searched in the npc inventory and compare the count to a value you define
  * **Check pick quest value**: Allows you to pick a quest and check a value of this quest
  * **Check quest state**: Allows you to pick a quest and check the state of the quest
- * **Check game time**: Allows you check if the current game time is before or after a specified 
- time.
+ * **Check game time**: Allows you check if the current game time is before or after a specified time. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).
  * **Check player skill value**: Checks the value of a skill the player can cast. You can pick the skill using a dialog and specify the value condition.
  * **Check npc skill value**: Checks the value of a skill the npc can cast. You can pick the skill using a dialog and specify the value condition.
  * **Player can use skill**: Checks if the player can use a skill
  * **Player can not use skill**: Checks if the player can not use a skill
  * **Npc can use skill**: Checks if the npc can use a skill
  * **Npc can not use skill**: Checks if the npc can not use a skill
+ * **Check random value**: Allows you to compare a random value to a certain value using different operators. This can be used if you want to add some varity in a dialog.
+ * **Check daily routine event is disabled**: Checks if a daily routine event of an npc is disabled. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
+ * **Check daily routine event is active**: Checks if a daily routine event of an npc is enabled. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
 
 On the right of each condition you will find the following icons:
  * **Arrows**: Allows you to rearrange the conditions
@@ -78,14 +98,3 @@ On the right of each condition you will find the following icons:
  * **Trash bin**: Allows you to delete the condition. If you click this for a group the conditions will stay and just the grouping will be removed
 
 At the bottom you can press confirm to confirm the condition and cancel to cancel the editing of the condition.
-
-## Config
-If you have the TaleConfigManager role assigned you can navigate to the Tale config area. In this area you can configure values that are shared for all dialogs and help building the dialogs. You can expand or collapse each config section by clicking on the title.
-
-### Play animation config
-This area allows you to enter proposed animations for the play animation nodes. Each line in the textarea will be one proposed animation in the node. By entering animation names here you can prevent problems with typos or users entering animations that don't exist.  
-**Please note:** Users will still be able to enter animations that are not configured in this area. This way a user can enter a unique animation for a dialog and one does not have to flood the animation configuration.
-
-### Set state config
-This area allows you to enter proposed states for the change state nodes. Each line in the textarea will be one proposed state in the node. By entering state names here you can prevent problems with typos or users entering states that don't exist.  
-**Please note:** Users will still be able to enter states that are not configured in this area. This way a user can enter a unique state for a dialog and one does not have to flood the state configuration.

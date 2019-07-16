@@ -14,6 +14,7 @@
    * [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates)
    * [Implementation Status Tracking](/steffendx/GoNorth/wiki/Implementation-Status-Tracking)
    * [Task Management](/steffendx/GoNorth/wiki/Task-Management)
+   * [Project Config](/steffendx/GoNorth/wiki/Project-Config)
    * [GDPR Support](/steffendx/GoNorth/wiki/Gdpr)
    * [Legal Notice](/steffendx/GoNorth/wiki/Legal-Notice)
  * Implementation:
@@ -24,4 +25,5 @@
    * [Swagger](/steffendx/GoNorth/wiki/Swagger)
    * [Node Graph Implementation](/steffendx/GoNorth/wiki/Node-Graph-Implementation)
    * [Export Implementation](/steffendx/GoNorth/wiki/Export-Implementation)
+   * [UI Tests](/steffendx/GoNorth/wiki/UI-Tests)
    * [Wiki Contribution](/steffendx/GoNorth/wiki/Wiki-Contribution)
