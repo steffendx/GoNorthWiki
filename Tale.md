@@ -22,6 +22,8 @@ The following nodes are available:
     * **Spawn item in npc inventory**: Spawn a new item in the npc inventory
     * **Give item to the player**: Removes an item from the npc inventory and add it to the player inventory
     * **Give item to the npc**: Removes an item from the player inventory and add it to the npc inventory
+    * **Spawn item in choose npc inventory**: Allows you to select an item and an npc. The selected item will be spawned in the inventory of the selected npc
+    * **Remove item from choose npc inventory**: Allows you to select an item and an npc. The selected item will be removed from the inventory of the selected npc
     * **Change pick quest value**: Allows you to pick a quest and change a value of this quest (like counting found objectives etc.)
     * **Change quest state**: Allows you to change the state of a quest
     * **Add quest text**: Allows you to add text to a quest log
@@ -61,6 +63,8 @@ The following nodes are available:
     This node has two output ports: One output to specify a node flow after the goal is reached, and one to continue the flow without a break. This can be useful if you want to continue the dialog without waiting for the npc to arrive at is goal and at the same time change some values or play an animation as soon as the npc has reached its target.
     * **Walk pick npc to npc**: This action allows you to pick an npc using a picker dialog and a target npc to which this npc will walk.  
     This node has two output ports: One output to specify a node flow after the goal is reached, and one to continue the flow without a break. This can be useful if you want to continue the dialog without waiting for the npc to arrive at is goal and at the same time change some values or play an animation as soon as the npc has reached its target.
+    * **Spawn npc at marker**: This action allows you to pick an npc and a marker. The selected npc will be spawned at the selected marker. You can also specify the rotation of the spawned npc.
+    * **Spawn item at marker**: This action allows you to pick an item and a marker. The selected item will be spawned at the selected marker. You can also specify the rotation of the spawned item.
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
@@ -95,6 +99,7 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check random value**: Allows you to compare a random value to a certain value using different operators. This can be used if you want to add some varity in a dialog.
  * **Check daily routine event is disabled**: Checks if a daily routine event of an npc is disabled. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
  * **Check daily routine event is active**: Checks if a daily routine event of an npc is enabled. You can pick the daily routine by searching for the npc and then expanding it to select the daily routine.
+ * **Script code**: This condition can be used if a you have to implement a special condition that can not be covered using the node system. For this the condition allows you to open a code editor and enter any script code you want. You will have to specify a name for the script for better usability.
 
 On the right of each condition you will find the following icons:
  * **Arrows**: Allows you to rearrange the conditions
