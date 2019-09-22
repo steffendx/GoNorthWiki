@@ -1,11 +1,11 @@
 GoNorth allows exporting of the following objects:
- * NPCs and their dialogs
+ * NPCs, their dialogs and daily routines
  * Items
  * Skills
 
 The supported file formats are:
  * JSON
- * Scripts based on customizable [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates)
+ * Scripts based on customizable [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates) which are extensible using [Export Snippets](/steffendx/GoNorth/wiki/Export-Snippets)
  * Language files
 
 **Please note:** A user needs the "ExportObjects" role to be allowed to export any object. 

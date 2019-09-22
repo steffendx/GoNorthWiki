@@ -12,6 +12,7 @@
    * [Karta (Maps)](/steffendx/GoNorth/wiki/Karta)
    * [Exporting](/steffendx/GoNorth/wiki/Export)
    * [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates)
+   * [Export Snippets](/steffendx/GoNorth/wiki/Export-Snippets)
    * [Implementation Status Tracking](/steffendx/GoNorth/wiki/Implementation-Status-Tracking)
    * [Task Management](/steffendx/GoNorth/wiki/Task-Management)
    * [Project Config](/steffendx/GoNorth/wiki/Project-Config)
