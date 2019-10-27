@@ -65,6 +65,9 @@ The following nodes are available:
     This node has two output ports: One output to specify a node flow after the goal is reached, and one to continue the flow without a break. This can be useful if you want to continue the dialog without waiting for the npc to arrive at is goal and at the same time change some values or play an animation as soon as the npc has reached its target.
     * **Spawn npc at marker**: This action allows you to pick an npc and a marker. The selected npc will be spawned at the selected marker. You can also specify the rotation of the spawned npc.
     * **Spawn item at marker**: This action allows you to pick an item and a marker. The selected item will be spawned at the selected marker. You can also specify the rotation of the spawned item.
+    * **Npc uses item**: This action allows you to pick an item that the current npc will use. This way you can have an npc drink a potion or equip a weapon.
+    * **Player uses item**: This action allows you to pick an item that the play will use. This way you can have the player drink a potion or equip a weapon.
+    * **Choose npc uses item**: This action allows you to pick a npc and an item. The selected npc will use that item. This way you can have any npc drink a potion or equip a weapon.
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
