@@ -6,24 +6,24 @@ To accomplish this you could change the template of that npc or item, but by doi
 To create special logic for each object like this in a way that is easier and better to maintain, I have implemented support for export snippets. You can think of these as special hooks in the different templates which can be adjusted per object (or not be filled at all). To fill them the user can use a node system or enter code. This way you still keep inheritance and the snippets can be filled even by users who have no coding skills by using a node system.
 
 ## Adjusting the templates
-At the moment the npc, item and skill templates support export snippets. To specify one you can simply add a placeholder called "{{CodeSnippet_*NAME_OF_SNIPPET*}}". By replacing NAME_OF_SNIPPET with the name of the snippet you can create a new snippet which can be filled for each object that is using this template. To add a new snippet that can be filled with special logic when an item gets picked up you could for example create a snippet called {{CodeSnippet_OnPickup}}.  
+At the moment the npc, item and skill templates support export snippets. To specify one you can simply add a placeholder called "{{ export_snippets.snippets.*NAME_OF_SNIPPET*.all_functions }}". By replacing NAME_OF_SNIPPET with the name of the snippet you can create a new snippet which can be filled for each object that is using this template. To add a new snippet that can be filled with special logic when an item gets picked up you could for example create a snippet called {{ export_snippets.snippets.OnPickup.all_functions }}.  
 
-Since a node system might need to generate additional functions there exists also a placeholder called "{{CodeSnippetAdditionalFunctions_*NAME_OF_SNIPPET*}}". This will be replaced by the additional functions of that node snippet.
+Since a node system might need to generate additional functions this will be an array of functions used for the code snippet. If you only want to get the initial function or additional functions you can use the following placeholders "{{ export_snippets.snippets.*NAME_OF_SNIPPET*.initial_function.code }}" or "{{ export_snippets.snippets.*NAME_OF_SNIPPET*.additional_functions }}". You can find more details in the listed placeholders of the [export form](/steffendx/GoNorth/wiki/ExportTemplates#customizing-templates)
 
-You can also render a certain part of the template only if a template is filled by using the "{{HasCodeSnippet_*NAME_OF_SNIPPET*_Start}}" and "{{HasCodeSnippet_End}}" placheolders.
+You can also render a certain part of the template only if a template is filled by using the "{{ if export_snippets.snippets.*NAME_OF_SNIPPET*.exists }}" and "{{ end }}" placheolders.
 
 So to put this all together, this is an example of what a code snippet in an item template might look like:  
 
-    {{HasCodeSnippet_OnPickup_Start}}function OnPickup(this)
-      {{CodeSnippet_OnPickup}}
-    end{{Has_CodeSnippetAdditionalFunctions_OnEquip_Start}}
+    {{~ if export_snippets.snippets.OnPickup.exists ~}}
+
+    {{~ for snippet_function in export_snippets.snippets.OnPickup.all_functions ~}}
+    {{ snippet_function | export_snippet_function }}
+    {{~ end ~}}
     
-    {{CodeSnippetAdditionalFunctions_OnEquip}}
-
-    {{Has_CodeSnippetAdditionalFunctions_End}}{{HasCodeSnippet_End}}
+    {{~ end ~}}
 
 
-One can find more details about the supported template placeholders when editing the export template of a npc, item or skill.
+One can find more details about the supported template placeholders when editing the export template of an npc, item or skill.
 
 ## Filling Export Snippets
 If the user has export permissions, that user can press the export button in the npc, item or skill form and then select export snippets.  
@@ -34,7 +34,7 @@ After you have made your choice you will have to enter a name (used to be able t
 If you want to delete a filled snippet, you can press the trash bin icon next to that snippets name. **Please note:** This will only remove the filled content for that snippet for the current object, not the placeholders in the template.
 
 ## Sample Snippets
-The following code is an example for a npc template to add an OnDeath Snippet (Check the region after the "----- Hooks ---" Section for the interesting parts):
+The following code is an example for an npc template to add an OnDeath Snippet (Check the region after the "----- Hooks ---" Section for the interesting parts):
 
     ----- Includes ----------
 
@@ -46,43 +46,52 @@ The following code is an example for a npc template to add an OnDeath Snippet (C
 
     function OnInit(this)
         -- Values
-        this:add_localized_string_value("Name", "{{FlexField_Name_LangKey}}")
+        this:add_localized_string_value("Name", "{{ langkey npc.name }}")
+        {{ npc.unused_fields | attribute_list }}
+        {{~ if !inventory.empty? ~}}
+        
+        -- Inventory
+        {{ inventory | inventory_list }}
+        {{~ end ~}}
+        {{~ if !skills.empty? ~}}
+        
+        -- Skills
+        {{ skills | skill_list }}
+        {{~ end ~}}
+        {{~ if !daily_routine.events.empty? ~}}
+        
+        -- Daily routine
+        {{ daily_routine.events | daily_routine_event_list }}
+        {{~ end ~}}
 
-        {{FlexField_UnusedFields}}
-
-        {{Npc_HasItems_Start}}-- Inventory
-        {{Npc_Inventory}}
-        {{Npc_HasItems_End}}
-        {{Npc_HasSkills_Start}}-- Skills
-        {{Npc_Skills}}
-        {{Npc_HasSkills_End}}
-        {{Npc_HasDailyRoutine_Start}}-- Daily Routine Events
-        {{Npc_DailyRoutine_Events}}{{Npc_HasDailyRoutine_End}}
-
-        {{Dialog_HasDialog_Start}}this:register_message_function("OnTalk", "DialogStart"){{Dialog_HasDialog_End}}
+        this:push_state("Idle")
+        {{~ if dialog ~}}
+        this:set_dialog_entry_function("{{ dialog.initial_function.function_name }}")
+        {{~ end ~}}
     end
 
-    ------ States -----------
-
-    {{Dialog_HasDialog_Start}}
+    {{~ if dialog ~}}
     ------ Dialog -----------
 
-    function DialogStart(this)
-        {{Dialog_Start}}
-    end
+    {{~ for curFunction in dialog.all_functions ~}}
 
-    {{Dialog_Additional_Functions}}
-    {{Dialog_HasDialog_End}}
+    {{ curFunction | dialog_function }}
 
-    {{Npc_HasDailyRoutine_Start}}
-    ------ Daily Routine ----
-    {{Npc_DailyRoutine_Functions}}
-    {{Npc_HasDailyRoutine_End}}{{HasAnyCodeSnippet_Start}}
-    ------ Hooks ------------
-    {{HasCodeSnippet_OnDeath_Start}}
-    function OnDeath(this)
-        {{CodeSnippet_OnDeath}}
-    end{{Has_CodeSnippetAdditionalFunctions_OnDeath_Start}}
+    {{~ end ~}}
+    {{~ end ~}}
 
-    {{CodeSnippetAdditionalFunctions_OnDeath}}
-    {{Has_CodeSnippetAdditionalFunctions_End}}{{HasCodeSnippet_End}}{{HasAnyCodeSnippet_End}}
+    {{~ if !daily_routine.event_functions.empty? ~}}
+    ------ Daily routine -----------
+
+    {{ daily_routine.event_functions | daily_routine_event_function_list }}
+    {{~ end ~}}
+    {{~ if export_snippets.snippets.OnDeath.exists ~}} 
+
+    -- Hooks --
+
+    {{~ for snippet_function in export_snippets.snippets.OnDeath.all_functions ~}}
+    {{ snippet_function | export_snippet_function }}
+
+    {{~ end ~}}
+
+    {{~ end ~}}

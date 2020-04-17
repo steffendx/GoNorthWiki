@@ -13,7 +13,26 @@ On the left you have different categories to help you keep track of the differen
 After selecting a template you will be navigated to the template editing page.  
 Here you can find a code editor for updating the template.  
 Above the code editor a list of usable placeholders for the current template type will be shown. This list will always show you which placeholders can be used and what their meaning and usage is in the current context. For this reason I will not list all the different placeholders here since there are quite a few, but recommend you to take a look at them in GoNorth itself.  
+The included editor will also provide intellisense for the different placeholders. These will be marked as placeholder on the right in the intellisense dropdown.  
 **Please note:** A placeholder must always be wrapped in "{{" and "}}".
+
+### Rendering Engines
+GoNorth supports two rendering engines for templates: Legacy mode and [Scriban](https://github.com/lunet-io/scriban). All new templates will use Scriban for rendering as this is a lot more flexibel.  
+But to help users switching from an old version of GoNorth to a newer version, the old templates are still supported. This way you can adjust the templates to Scriban when needed and your exports will still work.  
+**Please note**: I will probably drop support for Legacy mode in the future so that I can clean up the export code. Therefore I recommend you to switch to Scriban templates.  
+
+## Include Templates
+You might want to share code between a lot of different templates. To help you prevent duplicated code and make the implementation of new templates faster and less error prone, GoNorth supports so called Include Templates.  
+By selecting "Include Templates" in the categories of the export template overview you can create new templates or edit existing ones.  
+Inside of the include template create / edit page you will have a code editor along with a list of templates that are using this include template. **Please note:** If you are referencing an include template using a variable or function, this reference will not be listed here.  
+
+You can use these include templates by using the following command:
+
+    {{ include "<NAME OF THE TEMPLATE>" }}  
+
+This can not only be helpful for including actual text in different templates, but also to provide utility [Scriban Functions](https://github.com/lunet-io/scriban/blob/master/doc/language.md#7-functions) to templates.  
+
+**Please note**: Include templates are not supported in legacy mode.
 
 ## Dialog Function Generation Rules
 To allow you to have control at which point the generated script for a dialog will branch into a new function you can press the "Dialog function generation" button at the top of the template list.  

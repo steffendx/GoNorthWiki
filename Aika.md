@@ -71,8 +71,8 @@ The following nodes can be dragged into the node graph system:
     * **Change pick quest value**: Allows you to pick a quest and change a value of this quest (like counting found objectives etc.)
     * **Change quest state**: Allows you to change the state of a quest
     * **Add quest text**: Allows you to add text to a quest log
-    * **Quest status will be changed in npc dialog**: Allows you to pick a npc dialog and a state to which the current quest must be changed. GoNorth will check if an action node to change the quest state exists in the selected dialog and will display a warning if no node exists. 
-    * **Quest text will be changed in npc dialog**: Allows you to pick a npc dialog in which the text of the current quest will be adjusted. GoNorth will check if an action node to change the quest text exists in the selected dialog and will display a warning if no node exists. 
+    * **Quest status will be changed in npc dialog**: Allows you to pick an npc dialog and a state to which the current quest must be changed. GoNorth will check if an action node to change the quest state exists in the selected dialog and will display a warning if no node exists. 
+    * **Quest text will be changed in npc dialog**: Allows you to pick an npc dialog in which the text of the current quest will be adjusted. GoNorth will check if an action node to change the quest text exists in the selected dialog and will display a warning if no node exists. 
     * **Wait**: Allows you to specify an amount of time to wait. The time can be specified in real time or game time. This action has two output ports: One output port that will be run once the timeout has finished and one to directly continue the flow without waiting. 
     * **Player learns skill**: Allows you to select a skill the player learns
     * **Player forgets skills**: Allows you to select a skill the player forgets
@@ -105,7 +105,7 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check current quest value**: Check a value of the quest.
  * **Check pick quest value**: Allows you to pick a quest and check a value of the quest
  * **Check quest state**: Allows you to pick a quest and check the state of the quest
- * **Check npc alive state**: Allows you to pick a npc and check if the npc is alive or dead
+ * **Check npc alive state**: Allows you to pick an npc and check if the npc is alive or dead
  * **Check game time**: Allows you check if the current game time is before or after a specified time. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).
  * **Check player distance to quest marker**: Allows you to pick a quest marker and specify a distance to which the player needs to be. This way you can specify a certain point the player needs to be or maybe is not allowed to leave.
  * **Check player skill value**: Checks the value of a skill the player can cast. You can pick the skill using a dialog and specify the value condition.

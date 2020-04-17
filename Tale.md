@@ -1,4 +1,4 @@
-Tale is the dialog editing component of GoNorth. You can access this by navigating to a npc in [Kortisto](/steffendx/GoNorth/wiki/Kortisto) and then pressing the Dialog button at the top.  
+Tale is the dialog editing component of GoNorth. You can access this by navigating to an npc in [Kortisto](/steffendx/GoNorth/wiki/Kortisto) and then pressing the Dialog button at the top.  
 Please note: While a user edits a dialog this dialog will be readonly for other users to prevent them from overwriting each others changes.
 
 On the page you will see the following buttons at the top:
@@ -67,7 +67,7 @@ The following nodes are available:
     * **Spawn item at marker**: This action allows you to pick an item and a marker. The selected item will be spawned at the selected marker. You can also specify the rotation of the spawned item.
     * **Npc uses item**: This action allows you to pick an item that the current npc will use. This way you can have an npc drink a potion or equip a weapon.
     * **Player uses item**: This action allows you to pick an item that the play will use. This way you can have the player drink a potion or equip a weapon.
-    * **Choose npc uses item**: This action allows you to pick a npc and an item. The selected npc will use that item. This way you can have any npc drink a potion or equip a weapon.
+    * **Choose npc uses item**: This action allows you to pick an npc and an item. The selected npc will use that item. This way you can have any npc drink a potion or equip a weapon.
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
@@ -87,7 +87,7 @@ When editing a condition the condition dialog will open. At the top of the condi
 Below you find a list of conditions. You can select a type of condition from the drop down list. The following conditions are available:
  * **Check player value**: Check a value of the player. This could be used to give a different answer based on the charisma of the player etc.
  * **Check npc value**: Check a value of the npc.
- * **Check npc alive state**: Allows you to pick a npc and check if the npc is alive or dead
+ * **Check npc alive state**: Allows you to pick an npc and check if the npc is alive or dead
  * **Check player inventory**: Allows you to pick an item that will be searched in the player inventory and compare the count to a value you define
  * **Check npc inventory**: Allows you to pick an item that will be searched in the npc inventory and compare the count to a value you define
  * **Check pick quest value**: Allows you to pick a quest and check a value of this quest

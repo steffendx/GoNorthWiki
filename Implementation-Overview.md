@@ -4,12 +4,12 @@ The following page will give you a brief overview of the implementation.
 You will have to use [.Net Core](https://www.microsoft.com/net/learn/get-started/windows) to build the project. You simply have to run "dotnet run" to start GoNorth. You can find more details about running and deploying GoNorth in the [Deployment](/steffendx/GoNorth/wiki/Deployment) page.  
 The different services in the background for database access or analyzing the values is injected using the [ASP .Net Core dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection).  
 If you want to adjust the frontend you will have to use [Knockout](http://knockoutjs.com/).  
-The JavaScript files and css files are bundled and minified on build and these bundled versions are used. If you want to add new files you will have to adjust the [bundleconfig.json](https://docs.microsoft.com/en-us/aspnet/core/client-side/bundling-and-minification?view=aspnetcore-3.0&tabs=visual-studio).  
+The JavaScript files and css files are bundled and minified on build and these bundled versions are used. If you want to add new files you will have to adjust the [bundleconfig.json](https://docs.microsoft.com/en-us/aspnet/core/client-side/bundling-and-minification?view=aspnetcore-3.1&tabs=visual-studio).  
 I recommend you use [Visual Studio Code](https://code.visualstudio.com/) for development which I used to build the whole project.
 
 ## Folder structure
 This is the folder structure of the project:
- *  **Authentication**: This folder includes all the classes required for the [ASP .Net Core Identity Framework](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-3.0&tabs=visual-studio)
+ *  **Authentication**: This folder includes all the classes required for the [ASP .Net Core Identity Framework](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-3.1&tabs=visual-studio)
  * **Config**: This folder includes classes for reading the config. If you need a new config value you will have to add this as a property to the classes in here
  * **Controllers**: This folder includes all the ASP .Net controllers
    * **Api**: This subfolder includes all the ASP .Net WebApi controllers

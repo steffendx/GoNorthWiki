@@ -11,7 +11,7 @@ If the user enters edit mode the button at the top right will be hidden and the 
 While editing a page you can rename it using the textbox at the top. You will also find a toolbar at the top for rich text editing. Apart from normal rich text formating you can also find the following icons:
  * **Book**: By clicking on this icon you can eiter choose an existing page and insert a link to this page, or click on "Create new page" to create a new page. If you click "Create new page" a new window will open where you can define the name of the page and enter the text. Upon saving the new page a link to this page will be inserted in the original wiki page.
  * **Chess King**: If you have the Aika role you can click this button to choose a quest and insert a link for this quest in the page.
- * **Person**: If you have the Kortisto role you can click this button to choose a npc and insert a link for this npc in the page.
+ * **Person**: If you have the Kortisto role you can click this button to choose an npc and insert a link for this npc in the page.
  * **Apple**: If you have the Styr role you can click this button to choose an item and insert a link for this item in the page.
  * **Flash**: If you have the Evne role you can click this button to choose an skill and insert a link for this skill in the page.
 

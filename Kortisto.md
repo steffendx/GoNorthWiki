@@ -1,10 +1,10 @@
 Kortisto is the npc planning module of GoNorth. You can access it from the Kortisto tile on the home page or the navigation on the top.  
 Kortisto allows you to build your own templates with different fields. This way you can build a template for humans for example which has a health value, strength but also a background text box to provide more details for this npc. A monster template on the other hand might include a health and strength field but not a background text box since its just an enemy.  
-Please note: While a user edits a npc or template this npc or template will be readonly for other users to prevent them from overwriting each others changes.
+Please note: While a user edits an npc or template this npc or template will be readonly for other users to prevent them from overwriting each others changes.
 
 ## Npc List
 You will see a list of npcs and categories after navigating to Kortisto.  
-By using the search box you can search for npcs. This will search in the name and the tags assigned to a npc.
+By using the search box you can search for npcs. This will search in the name and the tags assigned to an npc.
 
 By clicking on create category you can create a new category for npcs. You can think of categories as folders in the file system. This way you can organize your different npcs.  
 A category can be given a name, a description and an image. The description will be shown on mouse hover over the image or icon of the category.  
@@ -13,7 +13,7 @@ Each category can be edited using the pencil icon on the top right of the tile. 
 By clicking on the create npc button you can choose a template and create a new npc based on this template. If no templates are shown there you will have to create a new template first by clicking on the manage template link in the drop down list.
 
 ### Moving Npcs or folders to other categories
-If you want to move a npc or folder to a different category you can drag that object onto a different existing folder and drop it there. Afterwards the dragged object will be moved into that category.  
+If you want to move an npc or folder to a different category you can drag that object onto a different existing folder and drop it there. Afterwards the dragged object will be moved into that category.  
 To move an object up a level, a small grey area with a fitting icon will be diplayed while dragging an object. If you drop that object in this area, the object will be moved one level up.  
 Using drag and drop you can quickly move objects one level up or down.  
 
@@ -30,9 +30,9 @@ By clicking on an existing template, existing npc, creating a new npc or creatin
 ### Buttons
 At the top of the form you will find several buttons:
  * **Save**: Will save the current npc or template
- * **Save & distribute fields to npcs**: This button is only available if you are working on a template. By pressing this button the template will be saved and all new fields will be distributed to all npcs based on this template. Please note: If you delete a field from a npc and distribute the fields of the template this field will be added again.
+ * **Save & distribute fields to npcs**: This button is only available if you are working on a template. By pressing this button the template will be saved and all new fields will be distributed to all npcs based on this template. Please note: If you delete a field from an npc and distribute the fields of the template this field will be added again.
  * **Add field**: This drop down list allows you to add a new field to the current npc or template. You can choose between a single line text field, multi line text field and, a number field, a dropdown field and a field group. After selecting a field type you must provide a name of the field and add it to the npc or template.
- * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker and working on a npc. If the current npc is not implemented you can click on this button to see the changes to the npc and flag it as implemented. If the current npc is already implemented this button will be labeled with implemented and be disabled.
+ * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker and working on an npc. If the current npc is not implemented you can click on this button to see the changes to the npc and flag it as implemented. If the current npc is already implemented this button will be labeled with implemented and be disabled.
  * **Export Template**: Allows you to customize the export template of the current object. See [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates) for more details.
  * **Export**: This button will give you a dropdown list with additional functionality, all part of exporting the npc:
     * **Script**: This will export the npc as a script based on the existing [Export Templates](/steffendx/GoNorth/wiki/ExportTemplates)
@@ -40,14 +40,14 @@ At the top of the form you will find several buttons:
     * **Language File**: This will export the used language keys and their value as a language file based on the existing language file template
     * **Export snippets**: This will open a dialog that allows you to customize the export snippets of the npc. See [Export Snippets](/steffendx/GoNorth/wiki/Export-Snippets) for more details.
     * **Regenerate Language Keys**: This will refresh all language keys. You can find more details on the [Export](/steffendx/GoNorth/wiki/Export) page.
- * **Dialog**: This button is only available if you are working on a npc and have the Tale role. By clicking this button you will switch to the [dialog of the npc](/steffendx/GoNorth/wiki/Tale).
+ * **Dialog**: This button is only available if you are working on an npc and have the Tale role. By clicking this button you will switch to the [dialog of the npc](/steffendx/GoNorth/wiki/Tale).
  * **Name generator**: This button is only available if you are working on a template. By clicking this button you will be able to setup the name generator template. In the dialog you can enter the template by using different placeholders and test the generated names. You can find more information about the algorithm [here](http://rinkworks.com/namegen/instr.shtml) and [here](http://rinkworks.com/namegen/reference.shtml).
- * **Generate name**: This button is only available if you are working on a npc. By clicking this button a name for the npc will be generated based on the name generator template of the npc template on which the npc is based. If no name generator template was specified in the npc template this button will be disabled.
- * **Mark as player**: This button will only be available if the current user is a Kortisto Player Manager and working on a npc. This button allows the user to flag a npc as the player npc. This is important in quests and dialogs to be able to select player values in actions and conditions.
+ * **Generate name**: This button is only available if you are working on an npc. By clicking this button a name for the npc will be generated based on the name generator template of the npc template on which the npc is based. If no name generator template was specified in the npc template this button will be disabled.
+ * **Mark as player**: This button will only be available if the current user is a Kortisto Player Manager and working on an npc. This button allows the user to flag an npc as the player npc. This is important in quests and dialogs to be able to select player values in actions and conditions.
  * **Delete**: Allows the user to delete the npc or template.
 
 ### Image
-On the left side the picture of the current npc will be displayed. If no picture is uploaded a placeholder icon will be displayed. You can add a picture to the npc or template by clicking on the picture or simply dropping an image on the icon. Please note: You can only add an image to a npc or template after saving the current form.
+On the left side the picture of the current npc will be displayed. If no picture is uploaded a placeholder icon will be displayed. You can add a picture to the npc or template by clicking on the picture or simply dropping an image on the icon. Please note: You can only add an image to an npc or template after saving the current form.
 
 ### Field list
 In the main part of the form you will see the name of the npc and the list of fields of the npc. Here you can change the values of the fields. Additionally you can use one of the following buttons on the right of the name of the field:
@@ -94,7 +94,7 @@ You will also have to specify a name for better usability.
 
 
 ### Tags
-In the tag box you can assign tags to the current template or npc. These tags are used in the npc search (either in the npc list page or when choosing a npc in the object select dialog).
+In the tag box you can assign tags to the current template or npc. These tags are used in the npc search (either in the npc list page or when choosing an npc in the object select dialog).
 
 ### Reference Display
-If you have a npc open and not a template you can see a list of references where the current npc is used. This will show you the quests, wiki pages, maps and dialogs in which the npc is used.
+If you have an npc open and not a template you can see a list of references where the current npc is used. This will show you the quests, wiki pages, maps and dialogs in which the npc is used.
