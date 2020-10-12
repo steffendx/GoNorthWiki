@@ -5,13 +5,14 @@ You will have to follow these steps to start GoNorth using the Release package:
  * [Install .Net Core](https://dotnet.microsoft.com/download). Be sure to select the correct plattform for your system. GoNorth requires .Net Core 3.1.
  * [Install MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/)
  * Start MongoDB if its not already running:
-   * Open a command line
+   * Open a command line (if you are running windows you can press File -> Open Windows PowerShell -> Open Windows PowerShell inside the Mongodb bin folder)
    * Navigate to the mongodb bin folder
    * Run mongod from the command line to start the MongoDB
+   * **Please note:** If you installed MongoDB as a service this is not required since MongoDB will already be running.
  * Download the [Release Package](https://github.com/steffendx/GoNorth/releases)
  * Extract the Release Package to where you want to store the files of GoNorth
  * Open the file "appsettings.json" in any editor you want to adjust the config settings. You will need to:
-   * Set a value for the config key **"FirstTimeDeploymentPassword"**. You can use any value for this password you want
+   * Set a value for the config key **"FirstTimeDeploymentPassword"**. You can use any value for this password you want (for example "A9TempWord!")
    * The MongoDB Connection string should be fine if you are running mongodb locally
  * Start the application:
    * Open a command line

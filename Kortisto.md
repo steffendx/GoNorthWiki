@@ -92,9 +92,20 @@ You will also have to specify a name for better usability.
 If you create a code script an editor will open where you can enter an arbitrary script that should be run. This gives you maximal flexibility, but will require coding skills and might be harder to maintain later on because you can not simply change a template.  
 You will also have to specify a name for better usability.
 
-
 ### Tags
 In the tag box you can assign tags to the current template or npc. These tags are used in the npc search (either in the npc list page or when choosing an npc in the object select dialog).
 
 ### Reference Display
 If you have an npc open and not a template you can see a list of references where the current npc is used. This will show you the quests, wiki pages, maps and dialogs in which the npc is used.
+
+## Bulk Import / Export values and objects
+### Export objects / values
+To help you balance, analyze or transfer your Npc values GoNorth offers a function to bulk export or import Npcs. To use this you have to navigate to the Npc List and select "Export field values".  
+This will open a new dialog which allows you to select a template for which you want to export the objects and the fields you want to export. Once you confirm this selection you will be provided with a CSV-File containing the objects you have just selected. **Please note:** Only the objects inside the current folder or below are exported. If you want to export all objects you have to navigate to the root level.
+
+### Import objects / values
+Next to the "Export field values" button you will find an "Import field values" button. This allows you to import a previously exported CSV-File. You can update the values inside the CSV-File to bulk update a list of Npcs to improve balancing or simply update a lot of fields. Just make sure to not change the Id column since this is required to match the Npc which must be updated.  
+To import a CSV-File you have to hit the "Import field values" button and then drag the CSV-File into the offered dropzone. Once you drop the file GoNorth will analyze its content and present you with a preview of objects that will be updated or created. You can deselect a line if you are not happy with the changes, this line will be ignored. After making sure all the values are correct you can hit the import button and the values will be imported for real.  
+Once the import process is finished the results will be displayed with each row indicating success, error or no change. You can also export the results into a CSV file to save for later use and reference.
+
+If you open the import field values dialog you can also show a list of previous imports in order to check the history of figure out the source of a bulk import.
