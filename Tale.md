@@ -71,6 +71,7 @@ The following nodes are available:
  * **Condition**: A condition to branch the dialog. By pressing the "+" at the top next to the "x" you can add a new condition. By pressing on the condition text you can edit the condition, see condition dialog below. Next to each condition you find the following icons:
     * **Arrows**: Using the arrows you can rearrange the the different conditions
     * **Trash bin**: By clicking this icon you can delete the condition
+ * **Reference**: The reference node can be used to reference a lot of different objects in the dialog. In addition to selecting a referenced object you can provide a description text to explain this reference.
 
 You can move the nodes by clicking on them and dragging them to a new position.  
 On the left side of each node you will find a red input port, on the right side of each node you will find one or more output ports. You can drag the output port of a node into the input port of a different node. This way you can control the flow of the dialog.  

@@ -70,6 +70,7 @@ The following nodes can be dragged into the node graph system:
     * **Change player state**: Allows you to change the state of the player. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the player is confused for example.
     *  **Change target npc state**: Allows you to change the state of the target npc of the skill. If you are using a state machine for npcs you can use this as a state in the state machine, if not you can use this to specify if the npc is angry for example.
     * **Wait**: Allows you to specify an amount of time to wait. The time can be specified in real time or game time.
+ * **Reference**: The reference node can be used to reference a lot of different objects in the skill. In addition to selecting a referenced object you can provide a description text to explain this reference.
 
 ### Condition dialog
 When editing a condition the condition dialog will open. At the top of the condition dialog you will find the following buttons:

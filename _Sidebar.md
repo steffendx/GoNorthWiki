@@ -2,6 +2,7 @@
 * [Deployment](/steffendx/GoNorth/wiki/Deployment)
 * [Docker Deployment](/steffendx/GoNorth/wiki/Docker-Deployment)
  * Usage:
+   * [Startpage](/steffendx/GoNorth/wiki/Startpage)
    * [Administration](/steffendx/GoNorth/wiki/Administration)
    * [Timeline](/steffendx/GoNorth/wiki/Timeline)
    * [Chapter & Quests (Aika)](/steffendx/GoNorth/wiki/Aika)
