@@ -13,7 +13,7 @@ The following nodes are available:
    * **Cross**: This icon is the handle used to move the node around in the canvas
    * **Gear**: This opens the detail setting for a state. You can find details below.
    * **Trash bin**: By clicking this icon you can remove the state and all associated transitions.
- * **Endpoint**: This node is used to mark the ending of the state machine. You can use the cross inside to move the node.
+ * **Endpoint**: This node is used to mark the ending of the state machine. You can use the trash bin to delete the node. By pressing and holding outside of this trash bin you can move the node around.
 
 In addition to adding new nodes you can also click on a transition to label this transition and describe the event which leads to the new state.  
 

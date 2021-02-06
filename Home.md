@@ -9,6 +9,7 @@ Table of contents:
    * [Timeline](/steffendx/GoNorth/wiki/Timeline)
    * [Chapter & Quests (Aika)](/steffendx/GoNorth/wiki/Aika)
    * [Npcs (Kortisto)](/steffendx/GoNorth/wiki/Kortisto)
+   * [State machine](/steffendx/GoNorth/wiki/State-Machine)
    * [Dialogs (Tale)](/steffendx/GoNorth/wiki/Tale)
    * [Item (Styr)](/steffendx/GoNorth/wiki/Styr)
    * [Skill (Evne)](/steffendx/GoNorth/wiki/Evne)
