@@ -4,6 +4,7 @@ Please note: While a user edits a dialog this dialog will be readonly for other 
 On the page you will see the following buttons at the top:
  * **Save**: Saves the current dialog
  * **Mark as implemented**: This button will only be visible if you are a member of the Implementation Status Tracker role. If the current dialog is not implemented you can click on this button to see the changes to the dialog and flag it as implemented. If the current dialog is already implemented this button will be labeled with implemented and be disabled.
+ * **Statistics**: This displays a dialog which shows dialog statistics. See below for details.
  * **Back to npc**: By clicking this button you will return to the npc to which the dialog belongs.
 
 Below the buttons you will find the available nodes. You can drag a node into the node graph below to add it to the dialog.  
@@ -111,3 +112,9 @@ On the right of each condition you will find the following icons:
  * **Trash bin**: Allows you to delete the condition. If you click this for a group the conditions will stay and just the grouping will be removed
 
 At the bottom you can press confirm to confirm the condition and cancel to cancel the editing of the condition.
+
+## Statistics
+The statistics dialog displays word count, condition count as well as node count.  
+The word count is based on the different text lines, choice nodes as well as actions like adding text to quests. By clicking on a headline the detailed statistics can be viewed.  
+The condition count is based on the conditions for choices as well as condition nodes.  
+Below one can find the count of total nodes in the dialog.

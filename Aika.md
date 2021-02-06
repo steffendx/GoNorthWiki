@@ -38,6 +38,7 @@ In the quest detail view you will find the following buttons at the top:
  * **Save**: Saves the quest
  * **Add field**: This drop down list allows you to add a new field to the quest. You can choose between a single line text field, multi line text field and, a number field, a dropdown field and a field group. After selecting a field type you must provide a name of the field and add it to the quest.
  * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker. If the quest is not implemented you can click on this button to see the changes to the quest and flag it as implemented. If the current quest is already implemented this button will be labeled with implemented and be disabled.
+ * **Statistics**: This displays a dialog which shows quest statistics. See below for details.
  * **Delete**: Allows the user to delete the quest. Please note: A quest can only be deleted if not used in any chapter detail view.
 
 Please note: While a user is editing a quest the quest will be readonly for other users to prevent them from overwriting each others changes.
@@ -129,3 +130,9 @@ At the top of the quest list you can find the following buttons:
  
 Using the search box you can also search for quests.  
 Below you can find a table with the different quests and open them by clicking on the name of the quest. In the right column you will see if the quest is a main quest.
+
+## Statistics
+The statistics dialog displays word count, condition count as well as node count.  
+The word count is based on the different text lines, reference nodes, finish nodes as well as actions like adding text to quests. By clicking on a headline the detailed statistics can be viewed.  
+The condition count is based on the condition nodes.  
+Below one can find the count of total nodes in the quest.
