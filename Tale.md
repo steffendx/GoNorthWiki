@@ -75,7 +75,7 @@ The following nodes are available:
  * **Reference**: The reference node can be used to reference a lot of different objects in the dialog. In addition to selecting a referenced object you can provide a description text to explain this reference.
 
 You can move the nodes by clicking on them and dragging them to a new position.  
-On the left side of each node you will find a red input port, on the right side of each node you will find one or more output ports. You can drag the output port of a node into the input port of a different node. This way you can control the flow of the dialog.  
+On the left side of each node you will find a red input port, on the right side of each node you will find one or more output ports. You can drag the output port of a node into the input port of a different node. This way you can control the flow of the dialog. If you hover over a connection you can use the displayed buttons to either delete this connection, or add a label to the connection.  
 On the top right of each node you will find a "x" button which allows you to delete the node.  
 You can move the view by clicking outside of a node in the gray area and drag the screen and zoom using the mouse wheel. Alternatively you can use touch control.  
 On the top left of the node system you will find a display of your current position and zoom in the node system. Next to these coordinates you can find an arrow to expand or collapse the mini map of the node system.

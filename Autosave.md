@@ -1,0 +1,2 @@
+To prevent data loss GoNorth has integrated support for autosaving the different forms in the system. This feature will automatically save your changes every minute if unsaved changes exist.  
+If you want to disable the autosave feature you will have to change the **DisableAutoSaving** appsettings key in the misc section to true.

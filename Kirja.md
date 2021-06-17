@@ -1,5 +1,5 @@
 Kirja is the wiki component of GoNorth.  
-On the top right you will find a button to enter edit mode and on the right of this button you can find an arrow to expand or collapse the wiki sidebar.  
+On the top right you will find a button to start a new review, enter edit mode and on the right of these buttons you can find an arrow to expand or collapse the wiki sidebar.  
 Please note: While a user edits a page this page will be readonly for other users to prevent them from overwriting each others changes.
 
 ## Editor
@@ -65,6 +65,30 @@ The following values are viable here:
  * **Any value above zero:** Kirja will not save more versions than specified here. If more versions would be saved, Kirja will delete the oldest version of this page to stay within this limit. If an image is only used in the version that is deleted, the image will also be deleted.
  * **Zero:** The versioning feature will be disabled
  * **Below zero:** An unlimited amount of versions will be saved for each page.
+
+## Review
+After starting a review one can list all reviews for each page by pressing the small down arrow button next to the start review button.  
+Each review has one of the following states:
+ * **Open**: The review was started and is still in progress
+ * **Completed**: The reviewer has finished the review and the review is ready to be merged into the main page
+ * **Merged**: The review is done and was merged into the wiki page
+
+Each review will display the current version of the wiki page in the beginning. The users can then modify the text to give feedback or add a comment using the button in the toolbar of the richtext editor. In addition a comment can be provided at the bottom of the page.
+
+Using the buttons at the top the review can be marked as completed. A completed review is readonly, but can be reopned.  
+
+### Merging
+If a review is marked as completed a banner at the top will offer a button to merge the feedback into the page. Once the button is pressed the review is compared against the latest version of the wiki page and each change is displayed. You can now click on the changes and accept or reject them (or manually adjust the page).  
+**Please note:** Comments are removed in the merge mode.
+
+Once all changes are merged you can confirm the merge and the main page will be updated accordingly. In addition the status of the page is changed to merged.
+
+### External sharing
+If external sharing for wiki pages is enabled a button at the top will be displayed in order to generate an external share link. You can then send this link to external people, allowing anonymous access to the wiki review. This link includes a strong token to ensure only people in possession of the share link can open the page.  
+
+External users are allowed to edit the review text, provide comments and marking the review as completed.  
+
+**Please note:** You can disable this feature by changing the value for the key **DisableWikiExternalSharing** inside the appsettings.json file to true.
 
 ## Page list
 The page list will display a list with all the different pages that currently exist in the wiki. By pressing "Create page" you can create a new wiki page.  

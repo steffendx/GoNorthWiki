@@ -19,6 +19,7 @@
    * [Implementation Status Tracking](/steffendx/GoNorth/wiki/Implementation-Status-Tracking)
    * [Task Management](/steffendx/GoNorth/wiki/Task-Management)
    * [Project Config](/steffendx/GoNorth/wiki/Project-Config)
+   * [Autosave](/steffendx/GoNorth/wiki/Autosave)
    * [GDPR Support](/steffendx/GoNorth/wiki/Gdpr)
    * [Legal Notice](/steffendx/GoNorth/wiki/Legal-Notice)
  * Implementation:
