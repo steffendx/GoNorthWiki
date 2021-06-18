@@ -8,7 +8,8 @@ If you dont have it installed already, follow the steps described [here to insta
 The GoNorth repository contains a dockerfile as well as a docker compose file. You can use those to start a docker image from the cloned source code.  
 To do so the following steps are required:  
 
- * Create the docker volumes by running **docker-volume-setup.sh**. If you are on windows, just run all the commands inside the file. Make sure your working directory is set to the checked out GoNorth source repository.
+ * Create the docker volumes by running **docker-volume-setup.sh**. If you are on windows, just run all the commands inside the file.  
+ **Please note:** Since the paths inside this script are relative paths you must make sure your working directory is set to the checked out GoNorth source repository. To do use the command `cd PATH_TO_GONORTH` (replace PATH_TO_GONORTH with the actual path).
  * Open **appsettings.docker.json** and enter a first time deployment password, for example "Deploy".
  * Build GoNorth using the following command: `docker-compose up --build`
  * Once this command has finished GoNorth will be available at http://localhost:5000/
