@@ -1,4 +1,3 @@
-Kirja is the wiki component of GoNorth.  
 On the top right you will find a button to start a new review, enter edit mode and on the right of these buttons you can find an arrow to expand or collapse the wiki sidebar.  
 Please note: While a user edits a page this page will be readonly for other users to prevent them from overwriting each others changes.
 

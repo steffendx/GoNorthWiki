@@ -80,13 +80,15 @@ In the logging section you can specify your log levels. Possible values are "Tra
 ### Miscellaneous Settings
 The following settings can be made in the Misc Section:
  * **ExternalUrl**: Specifies the url used when filling E-Mail Templates for resetting passwords etc. This is required to correctly fill the templates when using a reverse proxy for hosting.
- * **KirjaAllowedAttachmentMimeTypes**: This specifies which Mime-Types are allowed for attachments in the Wiki Component Kirja.
- * **KirjaVersionMergeTimeSpan**: Specifies the timespan in minutes for a Kirja Page version to be merged if it was edited by the same user. This prevents to many versions to be spammed. If the value is zero or negative, no versions will be merged. You can read more details in the [Kirja](/steffendx/GoNorth/wiki/Kirja) wiki page.
- * **KirjaMaxVersionCount**: Specifies the maximum amount of version to be kept for a Kirja Page. If the value is equal to zero, the versioning feature will be disabled. If the value is below zero an unlimited amount of versions will be kept. More details can be read in the [Kirja](/steffendx/GoNorth/wiki/Kirja) wiki page.
+ * **KirjaAllowedAttachmentMimeTypes**: This specifies which Mime-Types are allowed for attachments in the Wiki Component.
+ * **KirjaVersionMergeTimeSpan**: Specifies the timespan in minutes for a wiki page version to be merged if it was edited by the same user. This prevents to many versions to be spammed. If the value is zero or negative, no versions will be merged. You can read more details in the [wiki page](/steffendx/GoNorth/wiki/Kirja)
+ * **KirjaMaxVersionCount**: Specifies the maximum amount of version to be kept for a wiki Page. If the value is equal to zero, the versioning feature will be disabled. If the value is below zero an unlimited amount of versions will be kept. More details can be read in the [wiki page](/steffendx/GoNorth/wiki/Kirja).
  * **TimelineMergeTimeSpan**: Specifies the timespan in minutes for timeline events to be merged if made for the same event for the same user (for example if a user modifies the same wiki page in a timespan of 5 minutes). This way you can prevent flodding of timeline events. If the value is below or equal zero, no timeline events will be merged.
  * **FirstTimeDeploymentPassword**: Specifies the password used for the first time deployment page (see below). It is recommended to leave this blank if you have the portal up and running.
  * **UseGdpr**: True if the GDPR feature should be used, else false. More details can be found on the [GDPR wiki page](/steffendx/GoNorth/wiki/Gdpr).
  * **UseLegalNotice**: True if the Legal Notice feature should be used, else false. More details can be found on the [legal notice wiki page](/steffendx/GoNorth/wiki/Legal-Notice).
+ * **DisableAutoSaving**: True if you want to disable auto saving. Details can be found in the [wiki](/steffendx/GoNorth/wiki/Autosave)
+ * **DisableWikiExternalSharing**: True if you want to disable support for external sharing of wiki pages. Details can be found in the [wiki](/steffendx/GoNorth/wiki/Kirja#review)
 
 ### Legal Notice Settings
 If you are using the [legal notice](/steffendx/GoNorth/wiki/Legal-Notice) you can adjust the contact details shown on the legal notice page in the LegalNotice section.

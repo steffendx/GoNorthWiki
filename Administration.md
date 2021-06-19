@@ -24,7 +24,7 @@ The following roles are available for users:
  * **StyrTemplateManager**: Allows a user to create and edit item templates in the item planning module Styr.
  * **Evne**: Allows a user to create and edit categories and skills in the skill planning module Evne.
  * **EvneTemplateManager**: Allows a user to create and edit skill templates in the skill planning module Evne.
- * **Kirja**: Allows a user to access the wiki component Kirja.
+ * **Kirja**: Allows a user to access the wiki component.
  * **Tale**: Allows a user to edit the dialogs of npcs in the dialog planning module Tale.
  * **Aika**: Allows a user to edit chapters and quests in the quest planning module Aika.
  * **ImplementationStatusTracker**: Allows a user to flag objects to which he or she has access as implemented. A user which has no access to Styr for example will not be able to track the implementation status of items.
