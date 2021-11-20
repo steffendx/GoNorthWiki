@@ -1,4 +1,5 @@
-**If you want to deploy GoNorth without using Docker you can find more details in the [Deployment wiki page](/steffendx/GoNorth/wiki/Deployment)**
+**If you want to deploy GoNorth without using Docker you can find more details in the [Deployment wiki page](/steffendx/GoNorth/wiki/Deployment)**  
+**If you want to use an installer you can find more details in the [Installer Deployment wiki page](/steffendx/GoNorth/wiki/Installer-Deployment)**  
 
 ## Installing Docker
 [Docker](https://www.docker.com/) is an open-source software that uses OS-level virtualization to deliver software packages in containers.  

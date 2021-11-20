@@ -11,7 +11,7 @@ Please note: While a user is editing the chapter overview the chapter overview w
 Below the buttons you will find the possible nodes you can drag into the graph system. The following nodes are available:
  * **Chapter**: The chapter node will create a new chapter in Aika. Once you have added the node to the graph system you can enter the name of the chapter. Below the name you will have to specify the number of the chapter.  
  Please note: You can have two ore more chapters with the same number if there are different chapter with the number two for example. This can be used if the player can join one faction or another and the next chapter is different depending on which faction the player joined for example.  
- After saving the chapter will be created and a button "Open detail view" will be shown to open the detail view of the chapter. Each chapter node has one red input port and multiple outport ports. These outport ports represent the finish node in the detail view (see more below). By connecting the different output ports to the different input ports you can define your overall chapter flow. If you hover over a connection you can use the displayed buttons to either delete this connection, or add a label to the connection.  
+ After saving the chapter will be created and a button "Open detail view" will be shown to open the detail view of the chapter. Each chapter node has one red input port and multiple outport ports. These outport ports represent the finish node in the detail view (see more below). By connecting the different output ports to the different input ports you can define your overall chapter flow. If you hover over a connection you can use the displayed buttons to either delete this connection, add a label to the connection or hide all children.  
 
 Like every node graph system you can move the nodes by dragging them with the mouse.  
 On the top right of each node you will find a "x" button which allows you to delete the node.  
@@ -39,6 +39,7 @@ In the quest detail view you will find the following buttons at the top:
  * **Add field**: This drop down list allows you to add a new field to the quest. You can choose between a single line text field, multi line text field and, a number field, a dropdown field and a field group. After selecting a field type you must provide a name of the field and add it to the quest.
  * **Mark as implemented**: This button will only be available if the current user is an implementation status tracker. If the quest is not implemented you can click on this button to see the changes to the quest and flag it as implemented. If the current quest is already implemented this button will be labeled with implemented and be disabled.
  * **Statistics**: This displays a dialog which shows quest statistics. See below for details.
+ * **Export**: Allows you to export the quest to JSON.
  * **Delete**: Allows the user to delete the quest. Please note: A quest can only be deleted if not used in any chapter detail view.
 
 Please note: While a user is editing a quest the quest will be readonly for other users to prevent them from overwriting each others changes.

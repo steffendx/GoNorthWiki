@@ -1,9 +1,10 @@
-**If you want to use Docker you can find more details in the [Docker Deployment wiki page](/steffendx/GoNorth/wiki/Docker-Deployment)**
+**If you want to use Docker you can find more details in the [Docker Deployment wiki page](/steffendx/GoNorth/wiki/Docker-Deployment)**  
+**If you want to use an installer you can find more details in the [Installer Deployment wiki page](/steffendx/GoNorth/wiki/Installer-Deployment)**  
 
 ## Quick Start using Release package on local machine
 You will have to follow these steps to start GoNorth using the Release package:
- * [Install .Net Core](https://dotnet.microsoft.com/download). Be sure to select the correct plattform for your system. GoNorth requires .Net Core 5.0.
- * [Install MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/)
+ * [Install .Net Core](https://dotnet.microsoft.com/download). Be sure to select the correct plattform for your system. GoNorth requires .Net Core 6.0.
+ * [Install MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/). GoNorth supports MongoDB up to version 5.0.
  * Start MongoDB if its not already running:
    * Open a command line (if you are running windows you can press File -> Open Windows PowerShell -> Open Windows PowerShell inside the Mongodb bin folder)
    * Navigate to the mongodb bin folder
@@ -50,7 +51,7 @@ You will have to follow these steps to start GoNorth using the Release package:
 
 If you want to you can also:
  * [Install MongoDB as a service to have it always running and not having to start it manually if you are using windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#configure-a-windows-service-for-mongodb-community-edition)
- * Install the [GoNorth Webserver as a service](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-5.0)
+ * Install the [GoNorth Webserver as a service](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
 
 More details about deploying can be found in this page below.
 
@@ -62,7 +63,7 @@ If you already have GoNorth installed and want to simply update an existing inst
  * Start GoNorth
  * Navigate to the Admin Page -> Setup DB to make sure you have all the latest indices added to the database.
 
-**Please note**: If you have a GoNorth version installed prior to 1.8.1.0 you might need to upgrade your .Net Core version to 5.0.
+**Please note**: If you have a GoNorth version installed prior to 1.9.0.5 you might need to upgrade your .Net Core version to 6.0.
 
 ## Adjust configuration
 You will have to adjust the config file to your settings. You can find the config settings in the "appsettings.json" file. If you want to adjust values for development you can adjust the "appsettings.development.json" file.
@@ -89,6 +90,7 @@ The following settings can be made in the Misc Section:
  * **UseLegalNotice**: True if the Legal Notice feature should be used, else false. More details can be found on the [legal notice wiki page](/steffendx/GoNorth/wiki/Legal-Notice).
  * **DisableAutoSaving**: True if you want to disable auto saving. Details can be found in the [wiki](/steffendx/GoNorth/wiki/Autosave)
  * **DisableWikiExternalSharing**: True if you want to disable support for external sharing of wiki pages. Details can be found in the [wiki](/steffendx/GoNorth/wiki/Kirja#review)
+ * **AllowScriptSettingsForAllFieldTypes**: True if you want to be able to set export settings for all types of fields, not only the ones which can be exported to script.
 
 ### Legal Notice Settings
 If you are using the [legal notice](/steffendx/GoNorth/wiki/Legal-Notice) you can adjust the contact details shown on the legal notice page in the LegalNotice section.
@@ -117,7 +119,7 @@ This will start a new webserver listening on port 5000. Alternatively you can si
 If your MongoDB is running you can now connect to the portal. But you will have to create a new admin user, see First Time Deployment below on how to create this user.
 
 ## Hosting GoNorth in your production environment
-Please refer to the [official documentation on how to host and deploy an ASP.Net Core application](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-5.0) for hosting GoNorth in a your production environment. Keep in mind that GoNorth requires .Net Core 5.0.
+Please refer to the [official documentation on how to host and deploy an ASP.Net Core application](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0) for hosting GoNorth in a your production environment. Keep in mind that GoNorth requires .Net Core 6.0.
 
 If you use nginx or any other reverse proxy you will have to adjust the maximum upload size and the maximum header size. This is required to be able to upload big images for maps in Karta and ensure stability.  
 I use the following settings in nginx for example:

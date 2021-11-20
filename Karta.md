@@ -10,7 +10,9 @@ On the left of the map the different types of markers that a user can add to the
  * **Styr**: You can use the search box to search for an item you want to place on the map. You can place an item more than one time on the map. This way you can place items on the map that the user can find.
  * **Aika**: You can use th search box to search for a quest to which you wand to add markers. If you select a quest the already existing markers for this quest will be shown. So if you want to see the markers of a quest you will have to first select the quest. If you place a new marker a dialog will open where you can add a name to the quest marker.
  * **Karta**: You can select a map to which you want to add a map switch. After selecting a map you can add a marker for this map by clicking on the map.
- * **Notes**: If you select &lt;New Note&gt; a dialog will open where you can add a name and description for the note. By using note markers you can mark certain areas as dangerous, magic blocked and so on.
+ * **Notes**: If you select &lt;New Note&gt; a dialog will open where you can add a name, description and color for the note. By using note markers you can mark certain areas as dangerous, magic blocked and so on.  
+
+ In addition you will find a button to export the map to JSON at the top right of the map form.
 
 ### Editing Markers
 You can edit markers by simply dragging them. After releasing the marker it will be saved. By clicking on a marker a popup will be shown. At the bottom right of the popup you will find icons for editing the marker:
