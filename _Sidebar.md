@@ -1,5 +1,6 @@
 * [Home](/steffendx/GoNorth/wiki)
 * [Deployment](/steffendx/GoNorth/wiki/Deployment)
+* [Installer Deployment](/steffendx/GoNorth/wiki/Installer-Deployment)
 * [Docker Deployment](/steffendx/GoNorth/wiki/Docker-Deployment)
  * Usage:
    * [Startpage](/steffendx/GoNorth/wiki/Startpage)
