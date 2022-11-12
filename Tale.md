@@ -74,7 +74,7 @@ The following nodes are available:
     * **Trash bin**: By clicking this icon you can delete the condition
  * **Reference**: The reference node can be used to reference a lot of different objects in the dialog. In addition to selecting a referenced object you can provide a description text to explain this reference.
 
-You can move the nodes by clicking on them and dragging them to a new position.  
+You can move the nodes by clicking on them and dragging them to a new position. If you want to drag multiple nodes at once, you can use ctrl + drag to select multiple nodes and then drag them to a new position.   
 On the left side of each node you will find a red input port, on the right side of each node you will find one or more output ports. You can drag the output port of a node into the input port of a different node. This way you can control the flow of the dialog. If you hover over a connection you can use the displayed buttons to either delete this connection, add a label to the connection or hide all children.  
 On the top right of each node you will find a "x" button which allows you to delete the node.  
 You can move the view by clicking outside of a node in the gray area and drag the screen and zoom using the mouse wheel. Alternatively you can use touch control.  
