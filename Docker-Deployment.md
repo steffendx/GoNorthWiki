@@ -16,7 +16,7 @@ To do so the following steps are required:
  * Once this command has finished GoNorth will be available at http://localhost:5000/
  * To create your admin account navigate to http://localhost:5000/Deployment
  * Enter the password you specified in the appsettings.json for the **"FirstTimeDeploymentPassword"** Key in the Text Field "First Time Deployment Password". If you used the example, that would be "Deploy".
- * Enter your Username, E-Mail Address and a Password. The password must have at least 8 characters
+ * Enter your Username, E-Mail Address and a Password. The password must have at least 8 characters. The password must have 1 digit and 1 uppercase character.
  * Press Save to create your admin account
  * You can now login at http://localhost:5000/ using the new account
  * Navigate to the administration area using the NavBar at the top
