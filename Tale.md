@@ -90,8 +90,8 @@ Below you find a list of conditions. You can select a type of condition from the
  * **Check player value**: Check a value of the player. This could be used to give a different answer based on the charisma of the player etc.
  * **Check npc value**: Check a value of the npc.
  * **Check npc alive state**: Allows you to pick an npc and check if the npc is alive or dead
- * **Check player inventory**: Allows you to pick an item that will be searched in the player inventory and compare the count to a value you define
- * **Check npc inventory**: Allows you to pick an item that will be searched in the npc inventory and compare the count to a value you define
+ * **Check player inventory**: Allows you to pick an item that will be searched in the player inventory and compare the count to a value you define. This can also be used to check if an item is equipped.
+ * **Check npc inventory**: Allows you to pick an item that will be searched in the npc inventory and compare the count to a value you define. This can also be used to check if an item is equipped.
  * **Check pick quest value**: Allows you to pick a quest and check a value of this quest
  * **Check quest state**: Allows you to pick a quest and check the state of the quest
  * **Check game time**: Allows you check if the current game time is before or after a specified time. If your project is not using a 24 hour day, you can change this in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).

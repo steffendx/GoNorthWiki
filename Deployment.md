@@ -91,6 +91,7 @@ The following settings can be made in the Misc Section:
  * **DisableAutoSaving**: True if you want to disable auto saving. Details can be found in the [wiki](/steffendx/GoNorth/wiki/Autosave)
  * **DisableWikiExternalSharing**: True if you want to disable support for external sharing of wiki pages. Details can be found in the [wiki](/steffendx/GoNorth/wiki/Kirja#review)
  * **AllowScriptSettingsForAllFieldTypes**: True if you want to be able to set export settings for all types of fields, not only the ones which can be exported to script.
+ * **DisableItemInventory**: True if you want to disable an inventory for items, else false.
 
 ### Legal Notice Settings
 If you are using the [legal notice](/steffendx/GoNorth/wiki/Legal-Notice) you can adjust the contact details shown on the legal notice page in the LegalNotice section.

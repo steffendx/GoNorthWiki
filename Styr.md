@@ -57,6 +57,12 @@ In the main part of the form you will see the name of the item and the list of f
  * **Pencil**: You can rename the field by clicking this icon and edit the available options for an option field.
  * **Trash bin**: You can delete the field by clicking this icon.
 
+### Inventory
+Items can contain references to other items. This can be useful for creating a bag or recipes for example.  
+By clicking the Add item button you can add a new item to the inventory of the current item or template. You will have to create the item first.  
+Below you will see a table with all the items that are currently in the inventory of the item. In this table you will be able to set the quantity of items in the inventory as well as specifying a role. Using the role you can specify if the items is an ingredient for example or the result of a recipe. You can specify suggestions for these roles in the [Project Config](/steffendx/GoNorth/wiki/Project-Config).  
+On the most right you will be able to click the trash bin icon to delete the item from the inventory.
+
 ### Tags
 In the tag box you can assign tags to the current template or item. These tags are used in the item search (either in the item list page or when choosing an item in the object select dialog).
 

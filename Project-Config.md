@@ -11,3 +11,7 @@ This area allows you to enter proposed states for the change state nodes. Each l
 ### Time config
 If your project is not set in a world that has 24 hours per day or 60 minutes per hour, you can configure the the time settings of your project here.  
 If there are daily routine events that are outside of the given time frame (for example a daily routine event occures at 20:00 and after a change the day only has 18 hours), you will find a warning here with a link to the affected npcs.
+
+### Item roles
+This area allows you to enter proposed roles for items inside of item inventories. Each line in the textarea will be one proposed role in the item inventory. By entering roles here you can prevent problems with typos or users entering roles that don't exist.  
+**Please note:** Users will still be able to enter roles that are not configured in this area. This way a user can enter a unique role for an item and one does not have to flood the item role configuration.
