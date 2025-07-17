@@ -4,7 +4,7 @@
 ## Quick Start using Release package on local machine
 You will have to follow these steps to start GoNorth using the Release package:
  * Download the [installer release package](https://github.com/steffendx/GoNorth/releases)) fitting for your OS
- * [Install .Net Core](https://dotnet.microsoft.com/download). Be sure to select the correct plattform for your system. GoNorth requires .Net Core 6.0.
+ * [Install .Net Core](https://dotnet.microsoft.com/download). Be sure to select the correct plattform for your system. GoNorth requires .Net Core 8.0.
  * [Install MongoDB Community Edition](https://docs.mongodb.com/manual/administration/install-community/). GoNorth supports MongoDB up to version 5.0.
  * Start MongoDB if its not already running:
    * Open a command line (if you are running windows you can press File -> Open Windows PowerShell -> Open Windows PowerShell inside the Mongodb bin folder)
@@ -23,6 +23,6 @@ You will have to follow these steps to start GoNorth using the Release package:
 
 If you want to you can also:
  * [Install MongoDB as a service to have it always running and not having to start it manually if you are using windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#configure-a-windows-service-for-mongodb-community-edition)
- * Install the [GoNorth Webserver as a service](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
+ * Install the [GoNorth Webserver as a service](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-8.0)
 
 More details about deploying or updating an existing installation can be found in the [deployment page](/steffendx/GoNorth/wiki/Deployment) below.
